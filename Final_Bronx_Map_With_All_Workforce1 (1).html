@@ -1,0 +1,2756 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c569ddb2e2b9d99346a30f6e35a5c6fd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c569ddb2e2b9d99346a30f6e35a5c6fd" ></div>
+        
+    
+<div style="position: fixed; 
+            top: 50px; left: 10px; width: 240px; height: auto; 
+            z-index:9999; font-size:14px;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 2px 2px 6px rgba(0,0,0,0.3);">
+    <h4 style="margin-top: 0;">District Kiosk Counts</h4>
+    <ul style="list-style: none; padding-left: 0;">
+        <li><strong>District 1:</strong> 58 kiosks</li>
+        <li><strong>District 2:</strong> 35 kiosks</li>
+        <li><strong>District 8:</strong> 1 kiosk</li>
+        <li><strong>District 10:</strong> 2 kiosks</li>
+    </ul>
+    <p style="font-size: 12px; color: #555;">Includes all Wi-Fi kiosks, libraries, Workforce1 centers, and community centers by zone.</p>
+</div>
+</body>
+<script>
+    
+    
+            var map_c569ddb2e2b9d99346a30f6e35a5c6fd = L.map(
+                "map_c569ddb2e2b9d99346a30f6e35a5c6fd",
+                {
+                    center: [40.8448, -73.8648],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2cdf70e0dc2bca3f0920b4d1ef59da86 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c569ddb2e2b9d99346a30f6e35a5c6fd);
+        
+    
+            var rectangle_edc68d6ebfca6271c48945a486c11672 = L.rectangle(
+                [[40.8, -73.935], [40.829, -73.895]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_c569ddb2e2b9d99346a30f6e35a5c6fd);
+        
+    
+        var popup_1399e516ca941c304026f4c87e3dce68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9470af375fa8fcdac4b3ef50694e5e55 = $(`<div id="html_9470af375fa8fcdac4b3ef50694e5e55" style="width: 100.0%; height: 100.0%;">District 1: Mott Haven, Melrose, Port Morris</div>`)[0];
+            popup_1399e516ca941c304026f4c87e3dce68.setContent(html_9470af375fa8fcdac4b3ef50694e5e55);
+        
+
+        rectangle_edc68d6ebfca6271c48945a486c11672.bindPopup(popup_1399e516ca941c304026f4c87e3dce68)
+        ;
+
+        
+    
+    
+            rectangle_edc68d6ebfca6271c48945a486c11672.bindTooltip(
+                `<div>
+                     District 1: Mott Haven, Melrose, Port Morris
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var rectangle_e9b1b13c2feb4ad7817b0017db8bd6cb = L.rectangle(
+                [[40.82, -73.92], [40.85, -73.86]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_c569ddb2e2b9d99346a30f6e35a5c6fd);
+        
+    
+        var popup_026137e1b945ca5ae26acf0e5b8dc0b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef1100562b24cee3895a3410bbe4b743 = $(`<div id="html_ef1100562b24cee3895a3410bbe4b743" style="width: 100.0%; height: 100.0%;">District 2: Morrisania, Longwood, Hunts Point</div>`)[0];
+            popup_026137e1b945ca5ae26acf0e5b8dc0b9.setContent(html_ef1100562b24cee3895a3410bbe4b743);
+        
+
+        rectangle_e9b1b13c2feb4ad7817b0017db8bd6cb.bindPopup(popup_026137e1b945ca5ae26acf0e5b8dc0b9)
+        ;
+
+        
+    
+    
+            rectangle_e9b1b13c2feb4ad7817b0017db8bd6cb.bindTooltip(
+                `<div>
+                     District 2: Morrisania, Longwood, Hunts Point
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var rectangle_9073d6e04816054239b2c432e06ef4f8 = L.rectangle(
+                [[40.865, -73.93], [40.915, -73.855]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_c569ddb2e2b9d99346a30f6e35a5c6fd);
+        
+    
+        var popup_00190c1cfdcba12893fad2a6ba76ea0c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1342c88b54f8152250c86ec8f6ab17ce = $(`<div id="html_1342c88b54f8152250c86ec8f6ab17ce" style="width: 100.0%; height: 100.0%;">District 8: Riverdale, Kingsbridge, Marble Hill</div>`)[0];
+            popup_00190c1cfdcba12893fad2a6ba76ea0c.setContent(html_1342c88b54f8152250c86ec8f6ab17ce);
+        
+
+        rectangle_9073d6e04816054239b2c432e06ef4f8.bindPopup(popup_00190c1cfdcba12893fad2a6ba76ea0c)
+        ;
+
+        
+    
+    
+            rectangle_9073d6e04816054239b2c432e06ef4f8.bindTooltip(
+                `<div>
+                     District 8: Riverdale, Kingsbridge, Marble Hill
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var rectangle_805e846f98cdd2693bf2b0650cca3d82 = L.rectangle(
+                [[40.825, -73.87], [40.88, -73.78]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_c569ddb2e2b9d99346a30f6e35a5c6fd);
+        
+    
+        var popup_8e5128258be1f9e9dbe5ea1ad901d86b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fd71b2e76a6f77c345318025bf3ca55 = $(`<div id="html_0fd71b2e76a6f77c345318025bf3ca55" style="width: 100.0%; height: 100.0%;">District 10: Throgs Neck, Country Club, Co-op City, Pelham Bay</div>`)[0];
+            popup_8e5128258be1f9e9dbe5ea1ad901d86b.setContent(html_0fd71b2e76a6f77c345318025bf3ca55);
+        
+
+        rectangle_805e846f98cdd2693bf2b0650cca3d82.bindPopup(popup_8e5128258be1f9e9dbe5ea1ad901d86b)
+        ;
+
+        
+    
+    
+            rectangle_805e846f98cdd2693bf2b0650cca3d82.bindTooltip(
+                `<div>
+                     District 10: Throgs Neck, Country Club, Co-op City, Pelham Bay
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_0577e7c1301c34e1d69fc4afea85330f = L.featureGroup(
+                {}
+            ).addTo(map_c569ddb2e2b9d99346a30f6e35a5c6fd);
+        
+    
+            var marker_5f2955d51ab01887281f7340f51bd866 = L.marker(
+                [40.80682, -73.917657],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_f2823d2b28ca36d50ace9e6aa757c74c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5f2955d51ab01887281f7340f51bd866.setIcon(icon_f2823d2b28ca36d50ace9e6aa757c74c);
+        
+    
+        var popup_49703f25cede98af9c6ff88a85fd67fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa3674dbe5e5f5cb79348b7c25ad52c2 = $(`<div id="html_fa3674dbe5e5f5cb79348b7c25ad52c2" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-119011<br><strong>Address:</strong> 548 EAST 138 STREET</div>`)[0];
+            popup_49703f25cede98af9c6ff88a85fd67fc.setContent(html_fa3674dbe5e5f5cb79348b7c25ad52c2);
+        
+
+        marker_5f2955d51ab01887281f7340f51bd866.bindPopup(popup_49703f25cede98af9c6ff88a85fd67fc)
+        ;
+
+        
+    
+    
+            var marker_07ba46b3f2ba0ae41e1097958ebf605e = L.marker(
+                [40.819394, -73.916163],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_8ef4009416d72ebdf31483322a082099 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_07ba46b3f2ba0ae41e1097958ebf605e.setIcon(icon_8ef4009416d72ebdf31483322a082099);
+        
+    
+        var popup_6e9957bd214e7e477016b30679422561 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_988dd51bcb6f2d70001fae5a2bda2764 = $(`<div id="html_988dd51bcb6f2d70001fae5a2bda2764" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-146074<br><strong>Address:</strong> 680 MELROSE AVENUE</div>`)[0];
+            popup_6e9957bd214e7e477016b30679422561.setContent(html_988dd51bcb6f2d70001fae5a2bda2764);
+        
+
+        marker_07ba46b3f2ba0ae41e1097958ebf605e.bindPopup(popup_6e9957bd214e7e477016b30679422561)
+        ;
+
+        
+    
+    
+            var marker_2ebd21be9c7a59f59f37589012aa2465 = L.marker(
+                [40.810896, -73.921434],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_760835fb5bcf64f1ad0212659cc2f670 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2ebd21be9c7a59f59f37589012aa2465.setIcon(icon_760835fb5bcf64f1ad0212659cc2f670);
+        
+    
+        var popup_3e67465a46fdb6c63ea48ec6628c1e1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8936197fdac79b249271a70908e303d0 = $(`<div id="html_8936197fdac79b249271a70908e303d0" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-138789<br><strong>Address:</strong> 312 WILLIS AVENUE</div>`)[0];
+            popup_3e67465a46fdb6c63ea48ec6628c1e1b.setContent(html_8936197fdac79b249271a70908e303d0);
+        
+
+        marker_2ebd21be9c7a59f59f37589012aa2465.bindPopup(popup_3e67465a46fdb6c63ea48ec6628c1e1b)
+        ;
+
+        
+    
+    
+            var marker_2ce84ceedc16ef7f17835c2db309d2e5 = L.marker(
+                [40.823858, -73.89396],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_c3d9285796c48c4617518a6d4e79a580 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2ce84ceedc16ef7f17835c2db309d2e5.setIcon(icon_c3d9285796c48c4617518a6d4e79a580);
+        
+    
+        var popup_fadfb5a1ae7a8b31368871cd5e7f8178 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28a92de16ca275fcc9c9079ab22057eb = $(`<div id="html_28a92de16ca275fcc9c9079ab22057eb" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-157103<br><strong>Address:</strong> 995 WESTCHESTER AVENUE</div>`)[0];
+            popup_fadfb5a1ae7a8b31368871cd5e7f8178.setContent(html_28a92de16ca275fcc9c9079ab22057eb);
+        
+
+        marker_2ce84ceedc16ef7f17835c2db309d2e5.bindPopup(popup_fadfb5a1ae7a8b31368871cd5e7f8178)
+        ;
+
+        
+    
+    
+            var marker_d847d8b54a8d0caacbd8c13ddae37d99 = L.marker(
+                [40.816752, -73.929243],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_1627a5ad0df4929e6a94006cc8771a16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d847d8b54a8d0caacbd8c13ddae37d99.setIcon(icon_1627a5ad0df4929e6a94006cc8771a16);
+        
+    
+        var popup_fb116c7bb4dfb0f4caa0eb34dae6999c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5551c523586afce0ccfdae503dcf7991 = $(`<div id="html_5551c523586afce0ccfdae503dcf7991" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-145820<br><strong>Address:</strong> 140 EAST 144 STREET</div>`)[0];
+            popup_fb116c7bb4dfb0f4caa0eb34dae6999c.setContent(html_5551c523586afce0ccfdae503dcf7991);
+        
+
+        marker_d847d8b54a8d0caacbd8c13ddae37d99.bindPopup(popup_fb116c7bb4dfb0f4caa0eb34dae6999c)
+        ;
+
+        
+    
+    
+            var marker_e9ef2eb299c65e16292cea0b1e203cd0 = L.marker(
+                [40.817512, -73.928886],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_9de5094cc24669b1ed9357f2ba821df5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e9ef2eb299c65e16292cea0b1e203cd0.setIcon(icon_9de5094cc24669b1ed9357f2ba821df5);
+        
+    
+        var popup_808d519a7769419c46a0172b208543a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c77173db609bd14d4c0e333612ccc13 = $(`<div id="html_8c77173db609bd14d4c0e333612ccc13" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-145819<br><strong>Address:</strong> 135 EAST 146 STREET</div>`)[0];
+            popup_808d519a7769419c46a0172b208543a4.setContent(html_8c77173db609bd14d4c0e333612ccc13);
+        
+
+        marker_e9ef2eb299c65e16292cea0b1e203cd0.bindPopup(popup_808d519a7769419c46a0172b208543a4)
+        ;
+
+        
+    
+    
+            var marker_bafea99c6a41ee86c6e66b52437546d9 = L.marker(
+                [40.818017, -73.916791],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_bb66294f4808d7169b2b0b703534c9e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_bafea99c6a41ee86c6e66b52437546d9.setIcon(icon_bb66294f4808d7169b2b0b703534c9e2);
+        
+    
+        var popup_a553c479e41b42cb2f5f4392e912fc10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_03c1c78914f1f75fa5a8dbe8691f546d = $(`<div id="html_03c1c78914f1f75fa5a8dbe8691f546d" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-146062<br><strong>Address:</strong> 624 MELROSE AVENUE</div>`)[0];
+            popup_a553c479e41b42cb2f5f4392e912fc10.setContent(html_03c1c78914f1f75fa5a8dbe8691f546d);
+        
+
+        marker_bafea99c6a41ee86c6e66b52437546d9.bindPopup(popup_a553c479e41b42cb2f5f4392e912fc10)
+        ;
+
+        
+    
+    
+            var marker_0c2d3c12a09d8344f5703104fa234e89 = L.marker(
+                [40.816952, -73.895711],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_2fa34e87e8d102393dbcd3671e9a89d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0c2d3c12a09d8344f5703104fa234e89.setIcon(icon_2fa34e87e8d102393dbcd3671e9a89d8);
+        
+    
+        var popup_9cce8de41b8f00bf10e43d90577f167d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d8604b592b8cbd093bb874255c92b8b = $(`<div id="html_2d8604b592b8cbd093bb874255c92b8b" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-113121<br><strong>Address:</strong> 809 SOUTHERN BOULEVARD</div>`)[0];
+            popup_9cce8de41b8f00bf10e43d90577f167d.setContent(html_2d8604b592b8cbd093bb874255c92b8b);
+        
+
+        marker_0c2d3c12a09d8344f5703104fa234e89.bindPopup(popup_9cce8de41b8f00bf10e43d90577f167d)
+        ;
+
+        
+    
+    
+            var marker_64e0ab66739c88078ca435b1de45255a = L.marker(
+                [40.8366, -73.84436],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_a4b3253fe94ee67ac82c49e6c69ee3f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_64e0ab66739c88078ca435b1de45255a.setIcon(icon_a4b3253fe94ee67ac82c49e6c69ee3f4);
+        
+    
+        var popup_13a52278bb81baf3906cc44628b637fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52196376a8c46ac6c2619e4e142bb4fc = $(`<div id="html_52196376a8c46ac6c2619e4e142bb4fc" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-10-160008<br><strong>Address:</strong> 1331 HERSCHELL STREET</div>`)[0];
+            popup_13a52278bb81baf3906cc44628b637fe.setContent(html_52196376a8c46ac6c2619e4e142bb4fc);
+        
+
+        marker_64e0ab66739c88078ca435b1de45255a.bindPopup(popup_13a52278bb81baf3906cc44628b637fe)
+        ;
+
+        
+    
+    
+            var marker_69f559f37eaca9035230e1e9a8f73404 = L.marker(
+                [40.813436, -73.898846],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_64c217ec373791ef1a0ec649da226519 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_69f559f37eaca9035230e1e9a8f73404.setIcon(icon_64c217ec373791ef1a0ec649da226519);
+        
+    
+        var popup_c2b1d35133cfaab6145db2e39df9021f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18057633b8ae2304b642a1d15eaf43bb = $(`<div id="html_18057633b8ae2304b642a1d15eaf43bb" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-153487<br><strong>Address:</strong> 700 SOUTHERN BOULEVARD</div>`)[0];
+            popup_c2b1d35133cfaab6145db2e39df9021f.setContent(html_18057633b8ae2304b642a1d15eaf43bb);
+        
+
+        marker_69f559f37eaca9035230e1e9a8f73404.bindPopup(popup_c2b1d35133cfaab6145db2e39df9021f)
+        ;
+
+        
+    
+    
+            var marker_96dbbd226e961a1a0473bbaefc1cb268 = L.marker(
+                [40.808544, -73.929074],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_af25f00855657177543de2f00662a257 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_96dbbd226e961a1a0473bbaefc1cb268.setIcon(icon_af25f00855657177543de2f00662a257);
+        
+    
+        var popup_dd6877abacb0ff497f74f0b22e7edf19 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c46db539fc7f2d69cf4fc4bfd24f476 = $(`<div id="html_2c46db539fc7f2d69cf4fc4bfd24f476" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-145852<br><strong>Address:</strong> 141 LINCOLN AVENUE</div>`)[0];
+            popup_dd6877abacb0ff497f74f0b22e7edf19.setContent(html_2c46db539fc7f2d69cf4fc4bfd24f476);
+        
+
+        marker_96dbbd226e961a1a0473bbaefc1cb268.bindPopup(popup_dd6877abacb0ff497f74f0b22e7edf19)
+        ;
+
+        
+    
+    
+            var marker_8a7fa23f5d80e89d6d7f2b9193fd0b72 = L.marker(
+                [40.81851, -73.914614],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_edc20b6f7972403b8ac265ec28add84c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8a7fa23f5d80e89d6d7f2b9193fd0b72.setIcon(icon_edc20b6f7972403b8ac265ec28add84c);
+        
+    
+        var popup_eedb9eacbcd2d1a341612ff7581984c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e8df265f26815b4b380d863ee0d1731 = $(`<div id="html_9e8df265f26815b4b380d863ee0d1731" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-123214<br><strong>Address:</strong> 2969 3 AVENUE</div>`)[0];
+            popup_eedb9eacbcd2d1a341612ff7581984c4.setContent(html_9e8df265f26815b4b380d863ee0d1731);
+        
+
+        marker_8a7fa23f5d80e89d6d7f2b9193fd0b72.bindPopup(popup_eedb9eacbcd2d1a341612ff7581984c4)
+        ;
+
+        
+    
+    
+            var marker_13c9ee6901ce3c69ae6b9f4dfe90e6b7 = L.marker(
+                [40.813998, -73.919171],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_3b4cf09634bbcc43f918e39f6a6ae042 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_13c9ee6901ce3c69ae6b9f4dfe90e6b7.setIcon(icon_3b4cf09634bbcc43f918e39f6a6ae042);
+        
+    
+        var popup_be359b5cf6215402741f6fc620f82585 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51a64c63d139c97ea0749f154902f4a2 = $(`<div id="html_51a64c63d139c97ea0749f154902f4a2" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-116238<br><strong>Address:</strong> 460 WILLIS AVENUE</div>`)[0];
+            popup_be359b5cf6215402741f6fc620f82585.setContent(html_51a64c63d139c97ea0749f154902f4a2);
+        
+
+        marker_13c9ee6901ce3c69ae6b9f4dfe90e6b7.bindPopup(popup_be359b5cf6215402741f6fc620f82585)
+        ;
+
+        
+    
+    
+            var marker_58250dd1f4b12ea73059c905b997ca5b = L.marker(
+                [40.826714, -73.891644],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_6610461f15e919dea3ab87f33325c767 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_58250dd1f4b12ea73059c905b997ca5b.setIcon(icon_6610461f15e919dea3ab87f33325c767);
+        
+    
+        var popup_ba5a00c88728e386a9c6a197ef0d2112 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e84cadfef785fab201bed4e783fe98b2 = $(`<div id="html_e84cadfef785fab201bed4e783fe98b2" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-119044<br><strong>Address:</strong> 962 EAST 167 STREET</div>`)[0];
+            popup_ba5a00c88728e386a9c6a197ef0d2112.setContent(html_e84cadfef785fab201bed4e783fe98b2);
+        
+
+        marker_58250dd1f4b12ea73059c905b997ca5b.bindPopup(popup_ba5a00c88728e386a9c6a197ef0d2112)
+        ;
+
+        
+    
+    
+            var marker_05766a2e6a1d6ced0dcec228d9be4f64 = L.marker(
+                [40.821058, -73.89213],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_53a6bc0cec4629a7d4420a4e53971411 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_05766a2e6a1d6ced0dcec228d9be4f64.setIcon(icon_53a6bc0cec4629a7d4420a4e53971411);
+        
+    
+        var popup_429e54a19dc81683fa2d79ed11e59412 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3aa6b091fb30026f62d63a17cff9e0bb = $(`<div id="html_3aa6b091fb30026f62d63a17cff9e0bb" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-111546<br><strong>Address:</strong> 1025 East 163rd Street</div>`)[0];
+            popup_429e54a19dc81683fa2d79ed11e59412.setContent(html_3aa6b091fb30026f62d63a17cff9e0bb);
+        
+
+        marker_05766a2e6a1d6ced0dcec228d9be4f64.bindPopup(popup_429e54a19dc81683fa2d79ed11e59412)
+        ;
+
+        
+    
+    
+            var marker_8e1c8e894879e3afa9fce70e5c60e36a = L.marker(
+                [40.828674, -73.896554],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_1dd35ec134d97eaf3652b09dff6f3173 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8e1c8e894879e3afa9fce70e5c60e36a.setIcon(icon_1dd35ec134d97eaf3652b09dff6f3173);
+        
+    
+        var popup_c58b8635cdb90dda29203223bf192992 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cfe495dde633155d753deb61dad5d579 = $(`<div id="html_cfe495dde633155d753deb61dad5d579" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-158315<br><strong>Address:</strong> 1251 REV JAMES POLITE AVE</div>`)[0];
+            popup_c58b8635cdb90dda29203223bf192992.setContent(html_cfe495dde633155d753deb61dad5d579);
+        
+
+        marker_8e1c8e894879e3afa9fce70e5c60e36a.bindPopup(popup_c58b8635cdb90dda29203223bf192992)
+        ;
+
+        
+    
+    
+            var marker_399d01cbcd70594d5f63480bb364929a = L.marker(
+                [40.816692, -73.919637],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_dce8d9c7d5d763e145168443453f8e53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_399d01cbcd70594d5f63480bb364929a.setIcon(icon_dce8d9c7d5d763e145168443453f8e53);
+        
+    
+        var popup_7d344857ef377b2aad0c077898881f01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46ba5747e54d317daef84e9e87d7cf7e = $(`<div id="html_46ba5747e54d317daef84e9e87d7cf7e" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-123228<br><strong>Address:</strong> 349 EAST 149 STREET</div>`)[0];
+            popup_7d344857ef377b2aad0c077898881f01.setContent(html_46ba5747e54d317daef84e9e87d7cf7e);
+        
+
+        marker_399d01cbcd70594d5f63480bb364929a.bindPopup(popup_7d344857ef377b2aad0c077898881f01)
+        ;
+
+        
+    
+    
+            var marker_a300c388de3a1a460191e70347e22df2 = L.marker(
+                [40.812557, -73.926244],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_e2bb319e79c568dd1131210f9e9424fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a300c388de3a1a460191e70347e22df2.setIcon(icon_e2bb319e79c568dd1131210f9e9424fc);
+        
+    
+        var popup_63580c442438b0bd01b6a6450fc54d31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00fb9fb73d4a34c30459cc1703400344 = $(`<div id="html_00fb9fb73d4a34c30459cc1703400344" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-146046<br><strong>Address:</strong> 301 MORRIS AVENUE</div>`)[0];
+            popup_63580c442438b0bd01b6a6450fc54d31.setContent(html_00fb9fb73d4a34c30459cc1703400344);
+        
+
+        marker_a300c388de3a1a460191e70347e22df2.bindPopup(popup_63580c442438b0bd01b6a6450fc54d31)
+        ;
+
+        
+    
+    
+            var marker_0cdd66cf6f85c032e9dbafd9bf85ed53 = L.marker(
+                [40.814471, -73.912954],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_84a4f848ab9bdd1d4877d4d93b5826da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0cdd66cf6f85c032e9dbafd9bf85ed53.setIcon(icon_84a4f848ab9bdd1d4877d4d93b5826da);
+        
+    
+        var popup_b8291228e7c7a05ea0436c367cf48d52 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5383712705f3bd2d30f2472a8cd26b17 = $(`<div id="html_5383712705f3bd2d30f2472a8cd26b17" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-146045<br><strong>Address:</strong> 563 ST. ANN'S AVENUE</div>`)[0];
+            popup_b8291228e7c7a05ea0436c367cf48d52.setContent(html_5383712705f3bd2d30f2472a8cd26b17);
+        
+
+        marker_0cdd66cf6f85c032e9dbafd9bf85ed53.bindPopup(popup_b8291228e7c7a05ea0436c367cf48d52)
+        ;
+
+        
+    
+    
+            var marker_a19d53676416d67ce25ad3b11a7dcd41 = L.marker(
+                [40.808293, -73.923332],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_be879e2687d534047fed7f6f0655d7ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a19d53676416d67ce25ad3b11a7dcd41.setIcon(icon_be879e2687d534047fed7f6f0655d7ad);
+        
+    
+        var popup_375c33008e14cc10929cbbc5d1d52b3c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3b395cef92149c0f82f41f1e9e067ba = $(`<div id="html_c3b395cef92149c0f82f41f1e9e067ba" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-146086<br><strong>Address:</strong> 216 WILLIS AVENUE</div>`)[0];
+            popup_375c33008e14cc10929cbbc5d1d52b3c.setContent(html_c3b395cef92149c0f82f41f1e9e067ba);
+        
+
+        marker_a19d53676416d67ce25ad3b11a7dcd41.bindPopup(popup_375c33008e14cc10929cbbc5d1d52b3c)
+        ;
+
+        
+    
+    
+            var marker_43db70f718f68958e41c790db0a3e1bc = L.marker(
+                [40.8101, -73.902862],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_33d391bee6587c9910454dd0f85c5d3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_43db70f718f68958e41c790db0a3e1bc.setIcon(icon_33d391bee6587c9910454dd0f85c5d3d);
+        
+    
+        var popup_5a6a6903e7c7e93dea70d7b170d04688 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e77bc8829ef82ea190e4e658be393a81 = $(`<div id="html_e77bc8829ef82ea190e4e658be393a81" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-145581<br><strong>Address:</strong> 501 BRUCKNER BOULEVARD</div>`)[0];
+            popup_5a6a6903e7c7e93dea70d7b170d04688.setContent(html_e77bc8829ef82ea190e4e658be393a81);
+        
+
+        marker_43db70f718f68958e41c790db0a3e1bc.bindPopup(popup_5a6a6903e7c7e93dea70d7b170d04688)
+        ;
+
+        
+    
+    
+            var marker_be0a8cd7128c74337d6e7ca618be26e5 = L.marker(
+                [40.816188, -73.909917],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_d8b5fc103c8b82a160d3729e345934f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_be0a8cd7128c74337d6e7ca618be26e5.setIcon(icon_d8b5fc103c8b82a160d3729e345934f2);
+        
+    
+        var popup_14101644a0f1f6b4960f539283700ad0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8e455d49ff1030756c7847cd8584936e = $(`<div id="html_8e455d49ff1030756c7847cd8584936e" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-142736<br><strong>Address:</strong> 613 WESTCHESTER AVENUE</div>`)[0];
+            popup_14101644a0f1f6b4960f539283700ad0.setContent(html_8e455d49ff1030756c7847cd8584936e);
+        
+
+        marker_be0a8cd7128c74337d6e7ca618be26e5.bindPopup(popup_14101644a0f1f6b4960f539283700ad0)
+        ;
+
+        
+    
+    
+            var marker_dabaaca763cf0f6eaafaf223745ad098 = L.marker(
+                [40.821437, -73.912327],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_6534f98c2d241ea22dd3178dab1c1184 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_dabaaca763cf0f6eaafaf223745ad098.setIcon(icon_6534f98c2d241ea22dd3178dab1c1184);
+        
+    
+        var popup_d5bf2d9fe5ca6787ef2f55f408efbeac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e274b48e621e01b547eecef15bae944e = $(`<div id="html_e274b48e621e01b547eecef15bae944e" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-144251<br><strong>Address:</strong> 3097 3 AVENUE</div>`)[0];
+            popup_d5bf2d9fe5ca6787ef2f55f408efbeac.setContent(html_e274b48e621e01b547eecef15bae944e);
+        
+
+        marker_dabaaca763cf0f6eaafaf223745ad098.bindPopup(popup_d5bf2d9fe5ca6787ef2f55f408efbeac)
+        ;
+
+        
+    
+    
+            var marker_83122ae168ef1d4b9c40e5f15dd10296 = L.marker(
+                [40.804706, -73.912933],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_78102008e94cb1bce6a2f2ca710fa5aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_83122ae168ef1d4b9c40e5f15dd10296.setIcon(icon_78102008e94cb1bce6a2f2ca710fa5aa);
+        
+    
+        var popup_d1b1b0ea417c6fd62e0431e119d6ab13 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5bae4f129c26a89d2f91da054f711ceb = $(`<div id="html_5bae4f129c26a89d2f91da054f711ceb" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-119017<br><strong>Address:</strong> 710 EAST 138 STREET</div>`)[0];
+            popup_d1b1b0ea417c6fd62e0431e119d6ab13.setContent(html_5bae4f129c26a89d2f91da054f711ceb);
+        
+
+        marker_83122ae168ef1d4b9c40e5f15dd10296.bindPopup(popup_d1b1b0ea417c6fd62e0431e119d6ab13)
+        ;
+
+        
+    
+    
+            var marker_6469731fc1415894b3e1f6db8916d02b = L.marker(
+                [40.812441, -73.92925],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_93eacb3c72e1b2b1e0d25e8d8c9c5ed3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6469731fc1415894b3e1f6db8916d02b.setIcon(icon_93eacb3c72e1b2b1e0d25e8d8c9c5ed3);
+        
+    
+        var popup_6505b44f9a286572a087fe6e2ed297df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39dfdd849fc04791014b3c19a27dc4d0 = $(`<div id="html_39dfdd849fc04791014b3c19a27dc4d0" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-145917<br><strong>Address:</strong> 200 EAST 138 STREET</div>`)[0];
+            popup_6505b44f9a286572a087fe6e2ed297df.setContent(html_39dfdd849fc04791014b3c19a27dc4d0);
+        
+
+        marker_6469731fc1415894b3e1f6db8916d02b.bindPopup(popup_6505b44f9a286572a087fe6e2ed297df)
+        ;
+
+        
+    
+    
+            var marker_47af02db418e19e5deeb135c74bb522a = L.marker(
+                [40.817265, -73.897988],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_3bd61da470fd6aba3a074a0270afa8c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_47af02db418e19e5deeb135c74bb522a.setIcon(icon_3bd61da470fd6aba3a074a0270afa8c4);
+        
+    
+        var popup_1384c6e6c25e923cf1d48b4ef655555b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6014299755952d82eecd57ba51344450 = $(`<div id="html_6014299755952d82eecd57ba51344450" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-144220<br><strong>Address:</strong> 783 BECK STREET</div>`)[0];
+            popup_1384c6e6c25e923cf1d48b4ef655555b.setContent(html_6014299755952d82eecd57ba51344450);
+        
+
+        marker_47af02db418e19e5deeb135c74bb522a.bindPopup(popup_1384c6e6c25e923cf1d48b4ef655555b)
+        ;
+
+        
+    
+    
+            var marker_b2cd2f6e4c4e3714cd6861f55901e305 = L.marker(
+                [40.81738, -73.917078],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_e2d9b2cfd23aacad078ee831c5c125fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b2cd2f6e4c4e3714cd6861f55901e305.setIcon(icon_e2d9b2cfd23aacad078ee831c5c125fd);
+        
+    
+        var popup_02680bc49734e3d568ff1432f4994e0e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37e81d6bc146de88a52ea5a6b913df7d = $(`<div id="html_37e81d6bc146de88a52ea5a6b913df7d" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-146066<br><strong>Address:</strong> 610 MELROSE AVENUE</div>`)[0];
+            popup_02680bc49734e3d568ff1432f4994e0e.setContent(html_37e81d6bc146de88a52ea5a6b913df7d);
+        
+
+        marker_b2cd2f6e4c4e3714cd6861f55901e305.bindPopup(popup_02680bc49734e3d568ff1432f4994e0e)
+        ;
+
+        
+    
+    
+            var marker_154d976a4f8c96aa8b7d8be8c62c2335 = L.marker(
+                [40.834973, -73.845696],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_7b19d2b72a763bda02009c1f9a296553 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_154d976a4f8c96aa8b7d8be8c62c2335.setIcon(icon_7b19d2b72a763bda02009c1f9a296553);
+        
+    
+        var popup_4563b1fb1ba8e01312ccbae8e47d38ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_993c0c7be53a58d4674f11ed8bc296e1 = $(`<div id="html_993c0c7be53a58d4674f11ed8bc296e1" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-10-160009<br><strong>Address:</strong> 2365 WATERBURY AVENUE</div>`)[0];
+            popup_4563b1fb1ba8e01312ccbae8e47d38ca.setContent(html_993c0c7be53a58d4674f11ed8bc296e1);
+        
+
+        marker_154d976a4f8c96aa8b7d8be8c62c2335.bindPopup(popup_4563b1fb1ba8e01312ccbae8e47d38ca)
+        ;
+
+        
+    
+    
+            var marker_96335980f8b62fe3b1f4d61d665d30e8 = L.marker(
+                [40.817235, -73.915829],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_19d405af4a438709869daaaa06bda24c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_96335980f8b62fe3b1f4d61d665d30e8.setIcon(icon_19d405af4a438709869daaaa06bda24c);
+        
+    
+        var popup_32ad2ce57b05c66a32091339720356ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8aae0446e3abd3ebeddfe656f0aea53 = $(`<div id="html_e8aae0446e3abd3ebeddfe656f0aea53" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-118944<br><strong>Address:</strong> 2914 3 AVENUE</div>`)[0];
+            popup_32ad2ce57b05c66a32091339720356ab.setContent(html_e8aae0446e3abd3ebeddfe656f0aea53);
+        
+
+        marker_96335980f8b62fe3b1f4d61d665d30e8.bindPopup(popup_32ad2ce57b05c66a32091339720356ab)
+        ;
+
+        
+    
+    
+            var marker_43e3fc244081fa35c2910205537ea56d = L.marker(
+                [40.823945, -73.895682],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_53673cb4ad34f0a4024e781480e5b8ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_43e3fc244081fa35c2910205537ea56d.setIcon(icon_53673cb4ad34f0a4024e781480e5b8ac);
+        
+    
+        var popup_fec8f34e98075fa8dc0bd1ae948b041d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_710334c9e73eb13798c33f23e4f2bc48 = $(`<div id="html_710334c9e73eb13798c33f23e4f2bc48" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-152585<br><strong>Address:</strong> 1020 KELLY STREET</div>`)[0];
+            popup_fec8f34e98075fa8dc0bd1ae948b041d.setContent(html_710334c9e73eb13798c33f23e4f2bc48);
+        
+
+        marker_43e3fc244081fa35c2910205537ea56d.bindPopup(popup_fec8f34e98075fa8dc0bd1ae948b041d)
+        ;
+
+        
+    
+    
+            var marker_5f92f591f9a4c6e6acff8dcd6afd3502 = L.marker(
+                [40.820914, -73.890458],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_df1e3c33607065c3e5f572ce4ceb584c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5f92f591f9a4c6e6acff8dcd6afd3502.setIcon(icon_df1e3c33607065c3e5f572ce4ceb584c);
+        
+    
+        var popup_b6a027a9c047482d3807127a1c83ed1a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f021877a754995ee2fac3410664ff621 = $(`<div id="html_f021877a754995ee2fac3410664ff621" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-119037<br><strong>Address:</strong> 1055 EAST 163 STREET</div>`)[0];
+            popup_b6a027a9c047482d3807127a1c83ed1a.setContent(html_f021877a754995ee2fac3410664ff621);
+        
+
+        marker_5f92f591f9a4c6e6acff8dcd6afd3502.bindPopup(popup_b6a027a9c047482d3807127a1c83ed1a)
+        ;
+
+        
+    
+    
+            var marker_c2ca5ef510ef36b025ebba2bb8bd9354 = L.marker(
+                [40.807108, -73.918343],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_5faec05a0c8e667bd3c079597a6b6152 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c2ca5ef510ef36b025ebba2bb8bd9354.setIcon(icon_5faec05a0c8e667bd3c079597a6b6152);
+        
+    
+        var popup_898cb03c3a116ef342e79b951069150c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59baf6c28358342def67d456d240fb63 = $(`<div id="html_59baf6c28358342def67d456d240fb63" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-146060<br><strong>Address:</strong> 530 EAST 138 STREET</div>`)[0];
+            popup_898cb03c3a116ef342e79b951069150c.setContent(html_59baf6c28358342def67d456d240fb63);
+        
+
+        marker_c2ca5ef510ef36b025ebba2bb8bd9354.bindPopup(popup_898cb03c3a116ef342e79b951069150c)
+        ;
+
+        
+    
+    
+            var marker_d3b8d83f5f7e64a391f206db597f30eb = L.marker(
+                [40.81431, -73.930217],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_5afba7196d158c45d91b1dec29f72593 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d3b8d83f5f7e64a391f206db597f30eb.setIcon(icon_5afba7196d158c45d91b1dec29f72593);
+        
+    
+        var popup_c41e12bc9c309f3d505ae0c784ff7b4e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75efea53c7f8e77aeaf5988da0732ba2 = $(`<div id="html_75efea53c7f8e77aeaf5988da0732ba2" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-145842<br><strong>Address:</strong> 261 WALTON AVENUE</div>`)[0];
+            popup_c41e12bc9c309f3d505ae0c784ff7b4e.setContent(html_75efea53c7f8e77aeaf5988da0732ba2);
+        
+
+        marker_d3b8d83f5f7e64a391f206db597f30eb.bindPopup(popup_c41e12bc9c309f3d505ae0c784ff7b4e)
+        ;
+
+        
+    
+    
+            var marker_4729768b3744282afc48a226fc18e1ef = L.marker(
+                [40.818769, -73.91645],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_b96030ff2f113db381e8af98669a8164 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4729768b3744282afc48a226fc18e1ef.setIcon(icon_b96030ff2f113db381e8af98669a8164);
+        
+    
+        var popup_fbf8c013ee894351b971becf5f371b3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_613a60d1f93ff9ef5425bbaebc17833b = $(`<div id="html_613a60d1f93ff9ef5425bbaebc17833b" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-111740<br><strong>Address:</strong> 652A MELROSE AVENUE</div>`)[0];
+            popup_fbf8c013ee894351b971becf5f371b3f.setContent(html_613a60d1f93ff9ef5425bbaebc17833b);
+        
+
+        marker_4729768b3744282afc48a226fc18e1ef.bindPopup(popup_fbf8c013ee894351b971becf5f371b3f)
+        ;
+
+        
+    
+    
+            var marker_c005c7497b347d38d2bc54051ca6f591 = L.marker(
+                [40.819709, -73.901295],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_b64c897d1f0724017cdf8dcf5be8d37e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c005c7497b347d38d2bc54051ca6f591.setIcon(icon_b64c897d1f0724017cdf8dcf5be8d37e);
+        
+    
+        var popup_3521f45f84124a12844c8243fdc569ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db8739dfb05ab7b5fc15f597730d644e = $(`<div id="html_db8739dfb05ab7b5fc15f597730d644e" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-119034<br><strong>Address:</strong> 840 WESTCHESTER AVENUE</div>`)[0];
+            popup_3521f45f84124a12844c8243fdc569ce.setContent(html_db8739dfb05ab7b5fc15f597730d644e);
+        
+
+        marker_c005c7497b347d38d2bc54051ca6f591.bindPopup(popup_3521f45f84124a12844c8243fdc569ce)
+        ;
+
+        
+    
+    
+            var marker_8ab6fd78cef22da3cba98011300e629d = L.marker(
+                [40.812127, -73.920552],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_d39c1984a955e1156dd4f0d8eaa2a026 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8ab6fd78cef22da3cba98011300e629d.setIcon(icon_d39c1984a955e1156dd4f0d8eaa2a026);
+        
+    
+        var popup_cba79870d995bd19027d6f61ecd84832 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62bd43dc30eaa3fa0516ced40b91947a = $(`<div id="html_62bd43dc30eaa3fa0516ced40b91947a" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-146023<br><strong>Address:</strong> 374 WILLIS AVENUE</div>`)[0];
+            popup_cba79870d995bd19027d6f61ecd84832.setContent(html_62bd43dc30eaa3fa0516ced40b91947a);
+        
+
+        marker_8ab6fd78cef22da3cba98011300e629d.bindPopup(popup_cba79870d995bd19027d6f61ecd84832)
+        ;
+
+        
+    
+    
+            var marker_5edd8eba995a96b7e08b3010801f6475 = L.marker(
+                [40.81856, -73.9143],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_bbe90fd88ce2eb7dda806b434cf25974 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5edd8eba995a96b7e08b3010801f6475.setIcon(icon_bbe90fd88ce2eb7dda806b434cf25974);
+        
+    
+        var popup_d5e991c6d635b27b491aa7f20613adf0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e389f74189f8a3ac1b334b73c3dc022c = $(`<div id="html_e389f74189f8a3ac1b334b73c3dc022c" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-123212<br><strong>Address:</strong> 2976A 3 AVENUE</div>`)[0];
+            popup_d5e991c6d635b27b491aa7f20613adf0.setContent(html_e389f74189f8a3ac1b334b73c3dc022c);
+        
+
+        marker_5edd8eba995a96b7e08b3010801f6475.bindPopup(popup_d5e991c6d635b27b491aa7f20613adf0)
+        ;
+
+        
+    
+    
+            var marker_b8848521101f2d35e228b4bb409c0c8c = L.marker(
+                [40.817446, -73.915574],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_70261269db6439e56d5f24ff99bd2b17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b8848521101f2d35e228b4bb409c0c8c.setIcon(icon_70261269db6439e56d5f24ff99bd2b17);
+        
+    
+        var popup_cddc84c90eebba5305152acb656092d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1b02e2f915085bf8edcefa9aa60bd5f = $(`<div id="html_d1b02e2f915085bf8edcefa9aa60bd5f" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-118942<br><strong>Address:</strong> 2922 3 AVENUE</div>`)[0];
+            popup_cddc84c90eebba5305152acb656092d1.setContent(html_d1b02e2f915085bf8edcefa9aa60bd5f);
+        
+
+        marker_b8848521101f2d35e228b4bb409c0c8c.bindPopup(popup_cddc84c90eebba5305152acb656092d1)
+        ;
+
+        
+    
+    
+            var marker_8e50b0192cb2d08b601d198ab46e247a = L.marker(
+                [40.812079, -73.92659],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_6e7197fe9f6833028a5052522a752e24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8e50b0192cb2d08b601d198ab46e247a.setIcon(icon_6e7197fe9f6833028a5052522a752e24);
+        
+    
+        var popup_b15f01ba5dbba7549136b4f90797a715 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_470a12cde9129ea81eef995cc08a76f2 = $(`<div id="html_470a12cde9129ea81eef995cc08a76f2" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-146049<br><strong>Address:</strong> 289 MORRIS AVENUE</div>`)[0];
+            popup_b15f01ba5dbba7549136b4f90797a715.setContent(html_470a12cde9129ea81eef995cc08a76f2);
+        
+
+        marker_8e50b0192cb2d08b601d198ab46e247a.bindPopup(popup_b15f01ba5dbba7549136b4f90797a715)
+        ;
+
+        
+    
+    
+            var marker_e1ce1e5d8e286daf9d60a165e477cf17 = L.marker(
+                [40.82668, -73.887763],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_1fa09f58a95a2dd68de21fd44ac87912 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e1ce1e5d8e286daf9d60a165e477cf17.setIcon(icon_1fa09f58a95a2dd68de21fd44ac87912);
+        
+    
+        var popup_12ac0572f0b43184da58a0dfb3e8fd71 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e934c2f6367117efab2d62c17c37f5d4 = $(`<div id="html_e934c2f6367117efab2d62c17c37f5d4" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-100042<br><strong>Address:</strong> 1102 LONGFELLOW AVENUE</div>`)[0];
+            popup_12ac0572f0b43184da58a0dfb3e8fd71.setContent(html_e934c2f6367117efab2d62c17c37f5d4);
+        
+
+        marker_e1ce1e5d8e286daf9d60a165e477cf17.bindPopup(popup_12ac0572f0b43184da58a0dfb3e8fd71)
+        ;
+
+        
+    
+    
+            var marker_8211d1f1583757e9ccad887e1dddf4f1 = L.marker(
+                [40.821338, -73.896767],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_04448171d3a008c6d484489791b6d357 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8211d1f1583757e9ccad887e1dddf4f1.setIcon(icon_04448171d3a008c6d484489791b6d357);
+        
+    
+        var popup_867e3621447765a6b84f116f53616fa8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4203f797bb661ace685e45f516294e12 = $(`<div id="html_4203f797bb661ace685e45f516294e12" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-159084<br><strong>Address:</strong> 944A INTERVALE AVENUE</div>`)[0];
+            popup_867e3621447765a6b84f116f53616fa8.setContent(html_4203f797bb661ace685e45f516294e12);
+        
+
+        marker_8211d1f1583757e9ccad887e1dddf4f1.bindPopup(popup_867e3621447765a6b84f116f53616fa8)
+        ;
+
+        
+    
+    
+            var marker_056f0e8c611d0e104d2ab0e03262e916 = L.marker(
+                [40.81886, -73.914242],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_84648adf62d3f207d10546dad9be6c1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_056f0e8c611d0e104d2ab0e03262e916.setIcon(icon_84648adf62d3f207d10546dad9be6c1a);
+        
+    
+        var popup_e513ee59fb2a73587ac5dae167d97ce0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13e457d79696a93a886ee267f7c2d791 = $(`<div id="html_13e457d79696a93a886ee267f7c2d791" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-123217<br><strong>Address:</strong> 2991 3 AVENUE</div>`)[0];
+            popup_e513ee59fb2a73587ac5dae167d97ce0.setContent(html_13e457d79696a93a886ee267f7c2d791);
+        
+
+        marker_056f0e8c611d0e104d2ab0e03262e916.bindPopup(popup_e513ee59fb2a73587ac5dae167d97ce0)
+        ;
+
+        
+    
+    
+            var marker_e60f25470d77f283d40795efe20fcb16 = L.marker(
+                [40.824938, -73.891636],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_1f998d9a3c9a9ae14d40f27d88aaed40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e60f25470d77f283d40795efe20fcb16.setIcon(icon_1f998d9a3c9a9ae14d40f27d88aaed40);
+        
+    
+        var popup_327ee23fc450886fca2423d74607601c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a9b151bda536fd7c195d866598c8292 = $(`<div id="html_0a9b151bda536fd7c195d866598c8292" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-123197<br><strong>Address:</strong> 1041 WEST FARMS ROAD</div>`)[0];
+            popup_327ee23fc450886fca2423d74607601c.setContent(html_0a9b151bda536fd7c195d866598c8292);
+        
+
+        marker_e60f25470d77f283d40795efe20fcb16.bindPopup(popup_327ee23fc450886fca2423d74607601c)
+        ;
+
+        
+    
+    
+            var marker_ec55e5e4e1587850e30f1c19133f0b85 = L.marker(
+                [40.814394, -73.915181],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_98fe79e75d5f62715180afc31a21aec0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ec55e5e4e1587850e30f1c19133f0b85.setIcon(icon_98fe79e75d5f62715180afc31a21aec0);
+        
+    
+        var popup_d1d924045ce603409c8c3b85de6765d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3a8be4d9656b3a4a394d1398b6b39d9 = $(`<div id="html_e3a8be4d9656b3a4a394d1398b6b39d9" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-146056<br><strong>Address:</strong> 520 BROOK AVENUE</div>`)[0];
+            popup_d1d924045ce603409c8c3b85de6765d8.setContent(html_e3a8be4d9656b3a4a394d1398b6b39d9);
+        
+
+        marker_ec55e5e4e1587850e30f1c19133f0b85.bindPopup(popup_d1d924045ce603409c8c3b85de6765d8)
+        ;
+
+        
+    
+    
+            var marker_d00ce45d2e64a46395dd2663bbd895b3 = L.marker(
+                [40.810159, -73.927886],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_63b63790fc38ec74cbe7d9146aeeab9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d00ce45d2e64a46395dd2663bbd895b3.setIcon(icon_63b63790fc38ec74cbe7d9146aeeab9c);
+        
+    
+        var popup_e1a230095080d31cad20327ba4217b24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c1aad0af2b125154410829572db6f41 = $(`<div id="html_4c1aad0af2b125154410829572db6f41" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-145916<br><strong>Address:</strong> 197 LINCOLN AVENUE</div>`)[0];
+            popup_e1a230095080d31cad20327ba4217b24.setContent(html_4c1aad0af2b125154410829572db6f41);
+        
+
+        marker_d00ce45d2e64a46395dd2663bbd895b3.bindPopup(popup_e1a230095080d31cad20327ba4217b24)
+        ;
+
+        
+    
+    
+            var marker_330c0fc0a9b5119e10a080d0f88b9aec = L.marker(
+                [40.812943, -73.904111],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_15a973a6c17f011a0d1373d48f71324b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_330c0fc0a9b5119e10a080d0f88b9aec.setIcon(icon_15a973a6c17f011a0d1373d48f71324b);
+        
+    
+        var popup_561a8c755ec4a3862e42156eda8868a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_593bceb60ab84733be4f751682a3952d = $(`<div id="html_593bceb60ab84733be4f751682a3952d" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-160005<br><strong>Address:</strong> 576 PROSPECT AVENUE</div>`)[0];
+            popup_561a8c755ec4a3862e42156eda8868a2.setContent(html_593bceb60ab84733be4f751682a3952d);
+        
+
+        marker_330c0fc0a9b5119e10a080d0f88b9aec.bindPopup(popup_561a8c755ec4a3862e42156eda8868a2)
+        ;
+
+        
+    
+    
+            var marker_ea6cef72fb5616c2ca11a0f960c71c42 = L.marker(
+                [40.813575, -73.919491],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_fb172e6a7b034fe79a832c1f55cb9d97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ea6cef72fb5616c2ca11a0f960c71c42.setIcon(icon_fb172e6a7b034fe79a832c1f55cb9d97);
+        
+    
+        var popup_4273e45037af0e33a77aded79bd7f2a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb6a07198f22bff85f24aa6ccf7cedc0 = $(`<div id="html_eb6a07198f22bff85f24aa6ccf7cedc0" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-144892<br><strong>Address:</strong> 442 WILLIS AVENUE</div>`)[0];
+            popup_4273e45037af0e33a77aded79bd7f2a9.setContent(html_eb6a07198f22bff85f24aa6ccf7cedc0);
+        
+
+        marker_ea6cef72fb5616c2ca11a0f960c71c42.bindPopup(popup_4273e45037af0e33a77aded79bd7f2a9)
+        ;
+
+        
+    
+    
+            var marker_2a76a436cc758aeb4599e71ba1b72ba8 = L.marker(
+                [40.822338, -73.909427],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_990b0dc5aa4e6d0ac1a9cf4259c8fe51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2a76a436cc758aeb4599e71ba1b72ba8.setIcon(icon_990b0dc5aa4e6d0ac1a9cf4259c8fe51);
+        
+    
+        var popup_24428ca13711addc86fcd504868b2f27 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27f86229f57517a286f223b0783cb819 = $(`<div id="html_27f86229f57517a286f223b0783cb819" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-146065<br><strong>Address:</strong> 844 ST. ANN'S AVENUE</div>`)[0];
+            popup_24428ca13711addc86fcd504868b2f27.setContent(html_27f86229f57517a286f223b0783cb819);
+        
+
+        marker_2a76a436cc758aeb4599e71ba1b72ba8.bindPopup(popup_24428ca13711addc86fcd504868b2f27)
+        ;
+
+        
+    
+    
+            var marker_b469b61cfc2b5ea23c40b30cbb3aaee5 = L.marker(
+                [40.812163, -73.916467],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_9c8833a919f091f60c1b51b8926d5f41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b469b61cfc2b5ea23c40b30cbb3aaee5.setIcon(icon_9c8833a919f091f60c1b51b8926d5f41);
+        
+    
+        var popup_942fc726a5eb5de7c27352e78bc16ea2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5410f326d6e9dbfb24c4e5ecb28a949a = $(`<div id="html_5410f326d6e9dbfb24c4e5ecb28a949a" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-131467<br><strong>Address:</strong> 436 BROOK AVENUE</div>`)[0];
+            popup_942fc726a5eb5de7c27352e78bc16ea2.setContent(html_5410f326d6e9dbfb24c4e5ecb28a949a);
+        
+
+        marker_b469b61cfc2b5ea23c40b30cbb3aaee5.bindPopup(popup_942fc726a5eb5de7c27352e78bc16ea2)
+        ;
+
+        
+    
+    
+            var marker_2b6f7ccc18ca63e392ae88738327cfe0 = L.marker(
+                [40.820102, -73.912838],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_61f34fd7581a6ff63da72c7d9ac9f294 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2b6f7ccc18ca63e392ae88738327cfe0.setIcon(icon_61f34fd7581a6ff63da72c7d9ac9f294);
+        
+    
+        var popup_4f54c9c708bba9a0397deeead68f8735 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3bbee84c639267cf1bcb48518be3b42 = $(`<div id="html_d3bbee84c639267cf1bcb48518be3b42" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-118947<br><strong>Address:</strong> 487 EAST 156 STREET</div>`)[0];
+            popup_4f54c9c708bba9a0397deeead68f8735.setContent(html_d3bbee84c639267cf1bcb48518be3b42);
+        
+
+        marker_2b6f7ccc18ca63e392ae88738327cfe0.bindPopup(popup_4f54c9c708bba9a0397deeead68f8735)
+        ;
+
+        
+    
+    
+            var marker_32082e401dd3f7c223c06228a43cb971 = L.marker(
+                [40.815039, -73.929885],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_e710bca53a112cd8066fb5e6117ae0f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_32082e401dd3f7c223c06228a43cb971.setIcon(icon_e710bca53a112cd8066fb5e6117ae0f5);
+        
+    
+        var popup_a4ed2a45d81e992830810a9d0c90f1ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8330ca6232c86e8396bf07d5b5dab7f = $(`<div id="html_c8330ca6232c86e8396bf07d5b5dab7f" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-145841<br><strong>Address:</strong> 301 WALTON AVENUE</div>`)[0];
+            popup_a4ed2a45d81e992830810a9d0c90f1ed.setContent(html_c8330ca6232c86e8396bf07d5b5dab7f);
+        
+
+        marker_32082e401dd3f7c223c06228a43cb971.bindPopup(popup_a4ed2a45d81e992830810a9d0c90f1ed)
+        ;
+
+        
+    
+    
+            var marker_e87a58691f9cdf638d5464724106544b = L.marker(
+                [40.813128, -73.908991],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_43cbe240e8e59b0e598a39153696cec6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e87a58691f9cdf638d5464724106544b.setIcon(icon_43cbe240e8e59b0e598a39153696cec6);
+        
+    
+        var popup_5828a1eca78dc709ddec3e0c8f2f8bf3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe0d78b1e8cd41c08edfd8fd3c533ac7 = $(`<div id="html_fe0d78b1e8cd41c08edfd8fd3c533ac7" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-119027<br><strong>Address:</strong> 718 EAST 149 STREET</div>`)[0];
+            popup_5828a1eca78dc709ddec3e0c8f2f8bf3.setContent(html_fe0d78b1e8cd41c08edfd8fd3c533ac7);
+        
+
+        marker_e87a58691f9cdf638d5464724106544b.bindPopup(popup_5828a1eca78dc709ddec3e0c8f2f8bf3)
+        ;
+
+        
+    
+    
+            var marker_adda38db3fe1d7e2a29fc817edaa7687 = L.marker(
+                [40.806287, -73.917955],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_a7805436d4f51b3dcec3b74ff4053d33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_adda38db3fe1d7e2a29fc817edaa7687.setIcon(icon_a7805436d4f51b3dcec3b74ff4053d33);
+        
+    
+        var popup_29e249156e90cbff5ffdb65f4ddffc25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd1ee27532180b9f9c432276313784e7 = $(`<div id="html_fd1ee27532180b9f9c432276313784e7" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-146053<br><strong>Address:</strong> 211 ST. ANN'S AVENUE</div>`)[0];
+            popup_29e249156e90cbff5ffdb65f4ddffc25.setContent(html_fd1ee27532180b9f9c432276313784e7);
+        
+
+        marker_adda38db3fe1d7e2a29fc817edaa7687.bindPopup(popup_29e249156e90cbff5ffdb65f4ddffc25)
+        ;
+
+        
+    
+    
+            var marker_0743d742a3a73e714c64d082e6a90f64 = L.marker(
+                [40.809668, -73.922623],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_1b2732d8e93e53d6f086ed484c8c6c09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0743d742a3a73e714c64d082e6a90f64.setIcon(icon_1b2732d8e93e53d6f086ed484c8c6c09);
+        
+    
+        var popup_ef90ce419e1bc0659f8d34468a4d1e5f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2518faf632b0dfcfd45f9ab220fc7abb = $(`<div id="html_2518faf632b0dfcfd45f9ab220fc7abb" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-146024<br><strong>Address:</strong> 249 WILLIS AVENUE</div>`)[0];
+            popup_ef90ce419e1bc0659f8d34468a4d1e5f.setContent(html_2518faf632b0dfcfd45f9ab220fc7abb);
+        
+
+        marker_0743d742a3a73e714c64d082e6a90f64.bindPopup(popup_ef90ce419e1bc0659f8d34468a4d1e5f)
+        ;
+
+        
+    
+    
+            var marker_61bea698d6bb17a49d7e0b9cca85712a = L.marker(
+                [40.826449, -73.898554],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_020f6c1a566a6b0422b8d27302071d4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_61bea698d6bb17a49d7e0b9cca85712a.setIcon(icon_020f6c1a566a6b0422b8d27302071d4f);
+        
+    
+        var popup_933693fb312257d473231204639c4bb6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6f65e6e54142aca04f437bb40c215f0 = $(`<div id="html_c6f65e6e54142aca04f437bb40c215f0" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-155911<br><strong>Address:</strong> 1190 PROSPECT AVENUE</div>`)[0];
+            popup_933693fb312257d473231204639c4bb6.setContent(html_c6f65e6e54142aca04f437bb40c215f0);
+        
+
+        marker_61bea698d6bb17a49d7e0b9cca85712a.bindPopup(popup_933693fb312257d473231204639c4bb6)
+        ;
+
+        
+    
+    
+            var marker_4bb039d83162441efe125e94167ecf65 = L.marker(
+                [40.821838, -73.897648],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_fc8e8755820cf53199e25ea5e19b9787 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4bb039d83162441efe125e94167ecf65.setIcon(icon_fc8e8755820cf53199e25ea5e19b9787);
+        
+    
+        var popup_914da396b3d281ec78c96232881f7a4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bac2020eebb478a81e06c82c6ea1a35e = $(`<div id="html_bac2020eebb478a81e06c82c6ea1a35e" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-145554<br><strong>Address:</strong> 931 WESTCHESTER AVENUE</div>`)[0];
+            popup_914da396b3d281ec78c96232881f7a4a.setContent(html_bac2020eebb478a81e06c82c6ea1a35e);
+        
+
+        marker_4bb039d83162441efe125e94167ecf65.bindPopup(popup_914da396b3d281ec78c96232881f7a4a)
+        ;
+
+        
+    
+    
+            var marker_1abc508e6df0425ad4a2f5bb179d2188 = L.marker(
+                [40.819488, -73.913668],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_f620c85b83533b10305c0cea4e00b439 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1abc508e6df0425ad4a2f5bb179d2188.setIcon(icon_f620c85b83533b10305c0cea4e00b439);
+        
+    
+        var popup_05a7b543aca117a53a413ecd1958e140 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd818b19ab0e5d0c72a86b89aa537246 = $(`<div id="html_bd818b19ab0e5d0c72a86b89aa537246" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-123216<br><strong>Address:</strong> 3015 3 AVENUE</div>`)[0];
+            popup_05a7b543aca117a53a413ecd1958e140.setContent(html_bd818b19ab0e5d0c72a86b89aa537246);
+        
+
+        marker_1abc508e6df0425ad4a2f5bb179d2188.bindPopup(popup_05a7b543aca117a53a413ecd1958e140)
+        ;
+
+        
+    
+    
+            var marker_fd5f1bcbac19b3e5c6db55d637611798 = L.marker(
+                [40.817926, -73.915262],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_c2d4a4301abce4fa948b67294a5d9a8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fd5f1bcbac19b3e5c6db55d637611798.setIcon(icon_c2d4a4301abce4fa948b67294a5d9a8c);
+        
+    
+        var popup_109e430ba0878b876e9d6e5989297699 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b98f7783226592ac889943c6cd517559 = $(`<div id="html_b98f7783226592ac889943c6cd517559" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-109413<br><strong>Address:</strong> 2939 3 AVENUE</div>`)[0];
+            popup_109e430ba0878b876e9d6e5989297699.setContent(html_b98f7783226592ac889943c6cd517559);
+        
+
+        marker_fd5f1bcbac19b3e5c6db55d637611798.bindPopup(popup_109e430ba0878b876e9d6e5989297699)
+        ;
+
+        
+    
+    
+            var marker_def402ac5b33de034a4f1bd0b8eedf98 = L.marker(
+                [40.82089, -73.894041],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_7ea7ebfa8d2026d77e7835041dce4787 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_def402ac5b33de034a4f1bd0b8eedf98.setIcon(icon_7ea7ebfa8d2026d77e7835041dce4787);
+        
+    
+        var popup_4e85e37052ab1782506cc78fcafe5201 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ead7b4978e8b23023706a55b143d127 = $(`<div id="html_1ead7b4978e8b23023706a55b143d127" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-108937<br><strong>Address:</strong> 994 EAST 163 STREET</div>`)[0];
+            popup_4e85e37052ab1782506cc78fcafe5201.setContent(html_1ead7b4978e8b23023706a55b143d127);
+        
+
+        marker_def402ac5b33de034a4f1bd0b8eedf98.bindPopup(popup_4e85e37052ab1782506cc78fcafe5201)
+        ;
+
+        
+    
+    
+            var marker_5715c5efff81b9e0d7940d214a384c59 = L.marker(
+                [40.807756, -73.919006],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_6e92a040f7a9204a16d5f728272e5818 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5715c5efff81b9e0d7940d214a384c59.setIcon(icon_6e92a040f7a9204a16d5f728272e5818);
+        
+    
+        var popup_bd86a95ec27aa523ca49e5bcf2a9aeba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d76ce859ea45732b78ce531991bb3f3 = $(`<div id="html_0d76ce859ea45732b78ce531991bb3f3" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-146075<br><strong>Address:</strong> 250 BROOK AVENUE</div>`)[0];
+            popup_bd86a95ec27aa523ca49e5bcf2a9aeba.setContent(html_0d76ce859ea45732b78ce531991bb3f3);
+        
+
+        marker_5715c5efff81b9e0d7940d214a384c59.bindPopup(popup_bd86a95ec27aa523ca49e5bcf2a9aeba)
+        ;
+
+        
+    
+    
+            var marker_8d7f8b79daa3de40ea6fdcf1da17df3e = L.marker(
+                [40.812112, -73.903863],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_d7ff12c87f5039c345bc936fdcb2692b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8d7f8b79daa3de40ea6fdcf1da17df3e.setIcon(icon_d7ff12c87f5039c345bc936fdcb2692b);
+        
+    
+        var popup_4534e13b07598eb3fb0e48a2e243c382 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c7e487df9ce8ba082aa700c046b18fa = $(`<div id="html_3c7e487df9ce8ba082aa700c046b18fa" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-157674<br><strong>Address:</strong> 540 SOUTHERN BOULEVARD</div>`)[0];
+            popup_4534e13b07598eb3fb0e48a2e243c382.setContent(html_3c7e487df9ce8ba082aa700c046b18fa);
+        
+
+        marker_8d7f8b79daa3de40ea6fdcf1da17df3e.bindPopup(popup_4534e13b07598eb3fb0e48a2e243c382)
+        ;
+
+        
+    
+    
+            var marker_f9ba298ae54d80115c41418bcd66d712 = L.marker(
+                [40.815998, -73.908242],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_f97c749d3c6cf5b54e2045d479935e51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f9ba298ae54d80115c41418bcd66d712.setIcon(icon_f97c749d3c6cf5b54e2045d479935e51);
+        
+    
+        var popup_7f2867432d0816459f488560a147308c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4102ff4654d118c3cdce1c3a46da759f = $(`<div id="html_4102ff4654d118c3cdce1c3a46da759f" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-123210<br><strong>Address:</strong> 660 WESTCHESTER AVENUE</div>`)[0];
+            popup_7f2867432d0816459f488560a147308c.setContent(html_4102ff4654d118c3cdce1c3a46da759f);
+        
+
+        marker_f9ba298ae54d80115c41418bcd66d712.bindPopup(popup_7f2867432d0816459f488560a147308c)
+        ;
+
+        
+    
+    
+            var marker_c7cac17de9e8d1c9b2fa156b362049c0 = L.marker(
+                [40.807378, -73.917],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_62c0e0e59cc0ac85fe873bf92d0180a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c7cac17de9e8d1c9b2fa156b362049c0.setIcon(icon_62c0e0e59cc0ac85fe873bf92d0180a1);
+        
+    
+        var popup_6127cfd04c72b382eb55045968095b74 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f608da1f4a8ff673eab61a94d7fb6230 = $(`<div id="html_f608da1f4a8ff673eab61a94d7fb6230" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-117230<br><strong>Address:</strong> 256 ST. ANN'S AVENUE</div>`)[0];
+            popup_6127cfd04c72b382eb55045968095b74.setContent(html_f608da1f4a8ff673eab61a94d7fb6230);
+        
+
+        marker_c7cac17de9e8d1c9b2fa156b362049c0.bindPopup(popup_6127cfd04c72b382eb55045968095b74)
+        ;
+
+        
+    
+    
+            var marker_e9587566636135f8e712044a0f2a5a54 = L.marker(
+                [40.813595, -73.9304],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_2c9126547b688ab33b10fb1e62075caf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e9587566636135f8e712044a0f2a5a54.setIcon(icon_2c9126547b688ab33b10fb1e62075caf);
+        
+    
+        var popup_504246a8faac71e25c2aac4f69c9843f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0977dab3d6c3a28b5f39f6b88f980959 = $(`<div id="html_0977dab3d6c3a28b5f39f6b88f980959" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-145821<br><strong>Address:</strong> 250 WALTON AVENUE</div>`)[0];
+            popup_504246a8faac71e25c2aac4f69c9843f.setContent(html_0977dab3d6c3a28b5f39f6b88f980959);
+        
+
+        marker_e9587566636135f8e712044a0f2a5a54.bindPopup(popup_504246a8faac71e25c2aac4f69c9843f)
+        ;
+
+        
+    
+    
+            var marker_7eb39c3378e0f82579e744aac73b5934 = L.marker(
+                [40.817141, -73.916208],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_c7791038c15da44e34124c8cddad91a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7eb39c3378e0f82579e744aac73b5934.setIcon(icon_c7791038c15da44e34124c8cddad91a9);
+        
+    
+        var popup_7f0ccfa06b27b6c517a22270c25cd649 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23beda1b8f5bcd015465a38b113b5aa9 = $(`<div id="html_23beda1b8f5bcd015465a38b113b5aa9" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-118955<br><strong>Address:</strong> 2901 3 AVENUE</div>`)[0];
+            popup_7f0ccfa06b27b6c517a22270c25cd649.setContent(html_23beda1b8f5bcd015465a38b113b5aa9);
+        
+
+        marker_7eb39c3378e0f82579e744aac73b5934.bindPopup(popup_7f0ccfa06b27b6c517a22270c25cd649)
+        ;
+
+        
+    
+    
+            var marker_473619b8dc0a629f625e891dd82590d7 = L.marker(
+                [40.818676, -73.928165],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_58fb1bd7f599d7c77e6930a845a7b4f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_473619b8dc0a629f625e891dd82590d7.setIcon(icon_58fb1bd7f599d7c77e6930a845a7b4f3);
+        
+    
+        var popup_07bac64ddf963ac23f223842fe96e24b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f073a1a6cc50bebf65f05e01613022b1 = $(`<div id="html_f073a1a6cc50bebf65f05e01613022b1" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-119075<br><strong>Address:</strong> 134 EAST 149 STREET</div>`)[0];
+            popup_07bac64ddf963ac23f223842fe96e24b.setContent(html_f073a1a6cc50bebf65f05e01613022b1);
+        
+
+        marker_473619b8dc0a629f625e891dd82590d7.bindPopup(popup_07bac64ddf963ac23f223842fe96e24b)
+        ;
+
+        
+    
+    
+            var marker_816c12728bd637f683f156df1222d6da = L.marker(
+                [40.812253, -73.928665],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_9092a35cd88a4e246a6b0a8b485e2b80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_816c12728bd637f683f156df1222d6da.setIcon(icon_9092a35cd88a4e246a6b0a8b485e2b80);
+        
+    
+        var popup_0b36ebcf1864ea084a077253f3076802 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c7cff6bf9c51e8fafe01507f0145e11 = $(`<div id="html_0c7cff6bf9c51e8fafe01507f0145e11" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-145854<br><strong>Address:</strong> 217 EAST 138 STREET</div>`)[0];
+            popup_0b36ebcf1864ea084a077253f3076802.setContent(html_0c7cff6bf9c51e8fafe01507f0145e11);
+        
+
+        marker_816c12728bd637f683f156df1222d6da.bindPopup(popup_0b36ebcf1864ea084a077253f3076802)
+        ;
+
+        
+    
+    
+            var marker_b84eba679df9e3d2890d6229b7c0353c = L.marker(
+                [40.812841, -73.916074],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_209d77594c153939cc2adcad11fd4a5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b84eba679df9e3d2890d6229b7c0353c.setIcon(icon_209d77594c153939cc2adcad11fd4a5b);
+        
+    
+        var popup_368887f68f4001c98c91767ae13dfef3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e75d2eccec323a002c13187e2ec992b8 = $(`<div id="html_e75d2eccec323a002c13187e2ec992b8" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-146055<br><strong>Address:</strong> 468 BROOK AVENUE</div>`)[0];
+            popup_368887f68f4001c98c91767ae13dfef3.setContent(html_e75d2eccec323a002c13187e2ec992b8);
+        
+
+        marker_b84eba679df9e3d2890d6229b7c0353c.bindPopup(popup_368887f68f4001c98c91767ae13dfef3)
+        ;
+
+        
+    
+    
+            var marker_9155e1672c8aef4c6546418f4adf1f59 = L.marker(
+                [40.813367, -73.919625],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_c5c62b8a2004b2b82f54ef33e17f61d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9155e1672c8aef4c6546418f4adf1f59.setIcon(icon_c5c62b8a2004b2b82f54ef33e17f61d5);
+        
+    
+        var popup_5fbf211de2bbb87f7e9424621837f638 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1ca2568cebfeac0aad452a126a50d47 = $(`<div id="html_f1ca2568cebfeac0aad452a126a50d47" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-138788<br><strong>Address:</strong> 426 WILLIS AVENUE</div>`)[0];
+            popup_5fbf211de2bbb87f7e9424621837f638.setContent(html_f1ca2568cebfeac0aad452a126a50d47);
+        
+
+        marker_9155e1672c8aef4c6546418f4adf1f59.bindPopup(popup_5fbf211de2bbb87f7e9424621837f638)
+        ;
+
+        
+    
+    
+            var marker_9051388c763e8045b39734255ce731ee = L.marker(
+                [40.818048, -73.899498],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_6262b07639a6c8114e344f200f30ace5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9051388c763e8045b39734255ce731ee.setIcon(icon_6262b07639a6c8114e344f200f30ace5);
+        
+    
+        var popup_1d527918887f351ced1f87d3ab94d590 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7978c44801989e74500f17e7ea9817c7 = $(`<div id="html_7978c44801989e74500f17e7ea9817c7" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-152409<br><strong>Address:</strong> 928 LONGWOOD AVENUE</div>`)[0];
+            popup_1d527918887f351ced1f87d3ab94d590.setContent(html_7978c44801989e74500f17e7ea9817c7);
+        
+
+        marker_9051388c763e8045b39734255ce731ee.bindPopup(popup_1d527918887f351ced1f87d3ab94d590)
+        ;
+
+        
+    
+    
+            var marker_254d9c02382ff3f8c1ed318eb5d026db = L.marker(
+                [40.818886, -73.929213],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_fb49590ce8391dc2b5c973ca9a7d39a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_254d9c02382ff3f8c1ed318eb5d026db.setIcon(icon_fb49590ce8391dc2b5c973ca9a7d39a3);
+        
+    
+        var popup_3d635de7bb27467daae46d68b008ed1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_118e87d4cc0d6175b4f3c438797a0d78 = $(`<div id="html_118e87d4cc0d6175b4f3c438797a0d78" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-145688<br><strong>Address:</strong> 518 GERARD AVENUE</div>`)[0];
+            popup_3d635de7bb27467daae46d68b008ed1d.setContent(html_118e87d4cc0d6175b4f3c438797a0d78);
+        
+
+        marker_254d9c02382ff3f8c1ed318eb5d026db.bindPopup(popup_3d635de7bb27467daae46d68b008ed1d)
+        ;
+
+        
+    
+    
+            var marker_8eab69ea7606fbdc0dc7c593dcd2f0c5 = L.marker(
+                [40.820806, -73.898984],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_22d106e327867968a70a90a1d7b38768 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8eab69ea7606fbdc0dc7c593dcd2f0c5.setIcon(icon_22d106e327867968a70a90a1d7b38768);
+        
+    
+        var popup_f51ee77c966de1f425b2ab410d1b2cb2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da5e6916f4ae7e1c61b116ed8acafdb2 = $(`<div id="html_da5e6916f4ae7e1c61b116ed8acafdb2" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-152007<br><strong>Address:</strong> 888 Westchester Avenue</div>`)[0];
+            popup_f51ee77c966de1f425b2ab410d1b2cb2.setContent(html_da5e6916f4ae7e1c61b116ed8acafdb2);
+        
+
+        marker_8eab69ea7606fbdc0dc7c593dcd2f0c5.bindPopup(popup_f51ee77c966de1f425b2ab410d1b2cb2)
+        ;
+
+        
+    
+    
+            var marker_30d3283b79b3b8395eb15ee80e2c990c = L.marker(
+                [40.810255, -73.921923],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_cc069cb56b09131e115b193c5347a2ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_30d3283b79b3b8395eb15ee80e2c990c.setIcon(icon_cc069cb56b09131e115b193c5347a2ef);
+        
+    
+        var popup_7027013af59b26152a606e4b701cd7f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86d04da962be1b6775b557814e120139 = $(`<div id="html_86d04da962be1b6775b557814e120139" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-146083<br><strong>Address:</strong> 296 WILLIS AVENUE</div>`)[0];
+            popup_7027013af59b26152a606e4b701cd7f0.setContent(html_86d04da962be1b6775b557814e120139);
+        
+
+        marker_30d3283b79b3b8395eb15ee80e2c990c.bindPopup(popup_7027013af59b26152a606e4b701cd7f0)
+        ;
+
+        
+    
+    
+            var marker_20114a3f23ef3eabf8549e099e0099fe = L.marker(
+                [40.822112, -73.914849],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_595fc2f39f9a68ade53d8c51fa091829 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_20114a3f23ef3eabf8549e099e0099fe.setIcon(icon_595fc2f39f9a68ade53d8c51fa091829);
+        
+    
+        var popup_524fc719210817c55e2843d35d5acd4f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d43b40e37c27465e9cf8c3522fe7f196 = $(`<div id="html_d43b40e37c27465e9cf8c3522fe7f196" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-146063<br><strong>Address:</strong> 776 MELROSE AVENUE</div>`)[0];
+            popup_524fc719210817c55e2843d35d5acd4f.setContent(html_d43b40e37c27465e9cf8c3522fe7f196);
+        
+
+        marker_20114a3f23ef3eabf8549e099e0099fe.bindPopup(popup_524fc719210817c55e2843d35d5acd4f)
+        ;
+
+        
+    
+    
+            var marker_10ed2042afef387573da30c0865647ce = L.marker(
+                [40.823219, -73.891694],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_5ee9c29ce0643789d7900070624762c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_10ed2042afef387573da30c0865647ce.setIcon(icon_5ee9c29ce0643789d7900070624762c7);
+        
+    
+        var popup_81b4733a4c59a513fb0b853f689e71db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24bc75385bfface97633ddf41e85230b = $(`<div id="html_24bc75385bfface97633ddf41e85230b" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-123176<br><strong>Address:</strong> 945 ALDUS STREET</div>`)[0];
+            popup_81b4733a4c59a513fb0b853f689e71db.setContent(html_24bc75385bfface97633ddf41e85230b);
+        
+
+        marker_10ed2042afef387573da30c0865647ce.bindPopup(popup_81b4733a4c59a513fb0b853f689e71db)
+        ;
+
+        
+    
+    
+            var marker_0dc460c27bebccccd1666c67914997ed = L.marker(
+                [40.819568, -73.913388],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_6d4542b7642368b9a7c34d4dddf95990 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0dc460c27bebccccd1666c67914997ed.setIcon(icon_6d4542b7642368b9a7c34d4dddf95990);
+        
+    
+        var popup_3158fcc4d5c5abce16c853080014e073 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_928efa58067d6a495fd70f8733c3c653 = $(`<div id="html_928efa58067d6a495fd70f8733c3c653" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-123215<br><strong>Address:</strong> 3012 3 AVENUE</div>`)[0];
+            popup_3158fcc4d5c5abce16c853080014e073.setContent(html_928efa58067d6a495fd70f8733c3c653);
+        
+
+        marker_0dc460c27bebccccd1666c67914997ed.bindPopup(popup_3158fcc4d5c5abce16c853080014e073)
+        ;
+
+        
+    
+    
+            var marker_aa5e6fd357595487d95f0c0b83a0c435 = L.marker(
+                [40.868698, -73.902101],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_20c32071c8620962ebaa43644e8ab1ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_aa5e6fd357595487d95f0c0b83a0c435.setIcon(icon_20c32071c8620962ebaa43644e8ab1ef);
+        
+    
+        var popup_7b48f171bb97cffea7a4a86d86793264 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d52d0c171b151f7e5beb6476117795de = $(`<div id="html_d52d0c171b151f7e5beb6476117795de" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-08-145850<br><strong>Address:</strong> 119 WEST KINGSBRIDGE ROAD</div>`)[0];
+            popup_7b48f171bb97cffea7a4a86d86793264.setContent(html_d52d0c171b151f7e5beb6476117795de);
+        
+
+        marker_aa5e6fd357595487d95f0c0b83a0c435.bindPopup(popup_7b48f171bb97cffea7a4a86d86793264)
+        ;
+
+        
+    
+    
+            var marker_2a5164197a02ef2873b06e7982470f0c = L.marker(
+                [40.816751, -73.922955],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_ea805a37b6df6a36c9dfab7c27b2659c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2a5164197a02ef2873b06e7982470f0c.setIcon(icon_ea805a37b6df6a36c9dfab7c27b2659c);
+        
+    
+        var popup_87bb6b214c4670915bb624cccb207d09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68ed7d5fbc2fa12b98307da021ecb3b0 = $(`<div id="html_68ed7d5fbc2fa12b98307da021ecb3b0" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-116415<br><strong>Address:</strong> 522 MORRIS AVENUE</div>`)[0];
+            popup_87bb6b214c4670915bb624cccb207d09.setContent(html_68ed7d5fbc2fa12b98307da021ecb3b0);
+        
+
+        marker_2a5164197a02ef2873b06e7982470f0c.bindPopup(popup_87bb6b214c4670915bb624cccb207d09)
+        ;
+
+        
+    
+    
+            var marker_979b3a74ea01d906959f9767c1fabe55 = L.marker(
+                [40.814577, -73.89693],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_3061c3dd176e3429d493e66b2496c2a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_979b3a74ea01d906959f9767c1fabe55.setIcon(icon_3061c3dd176e3429d493e66b2496c2a0);
+        
+    
+        var popup_7d117c751eb30e2915c52f9bbab2c8af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af2c048e93545b85818bca96916160c5 = $(`<div id="html_af2c048e93545b85818bca96916160c5" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-155725<br><strong>Address:</strong> 751 BRUCKNER BOULEVARD</div>`)[0];
+            popup_7d117c751eb30e2915c52f9bbab2c8af.setContent(html_af2c048e93545b85818bca96916160c5);
+        
+
+        marker_979b3a74ea01d906959f9767c1fabe55.bindPopup(popup_7d117c751eb30e2915c52f9bbab2c8af)
+        ;
+
+        
+    
+    
+            var marker_79b859f945d4988c14ee6c7f2a8f0a4b = L.marker(
+                [40.806385, -73.916245],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_254a824b74f15b7227035fa750958d2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_79b859f945d4988c14ee6c7f2a8f0a4b.setIcon(icon_254a824b74f15b7227035fa750958d2a);
+        
+    
+        var popup_448810a7b87c3dfe5bb3aa538073c255 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_224fb404cd7cbee859121ca49ca87fe6 = $(`<div id="html_224fb404cd7cbee859121ca49ca87fe6" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-146054<br><strong>Address:</strong> 601 EAST 138 STREET</div>`)[0];
+            popup_448810a7b87c3dfe5bb3aa538073c255.setContent(html_224fb404cd7cbee859121ca49ca87fe6);
+        
+
+        marker_79b859f945d4988c14ee6c7f2a8f0a4b.bindPopup(popup_448810a7b87c3dfe5bb3aa538073c255)
+        ;
+
+        
+    
+    
+            var marker_b88f575365dd5c74adf83cd1894826d2 = L.marker(
+                [40.820902, -73.896055],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_192fe41af6042697889747eba5c28d2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b88f575365dd5c74adf83cd1894826d2.setIcon(icon_192fe41af6042697889747eba5c28d2e);
+        
+    
+        var popup_bfaf5e68c1ac17f048646841cf6eb64d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c52a866b618fa2bcf015249953a2883a = $(`<div id="html_c52a866b618fa2bcf015249953a2883a" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-111492<br><strong>Address:</strong> 948 EAST 163 STREET</div>`)[0];
+            popup_bfaf5e68c1ac17f048646841cf6eb64d.setContent(html_c52a866b618fa2bcf015249953a2883a);
+        
+
+        marker_b88f575365dd5c74adf83cd1894826d2.bindPopup(popup_bfaf5e68c1ac17f048646841cf6eb64d)
+        ;
+
+        
+    
+    
+            var marker_2bad676d85063689e50247d5c75ce86f = L.marker(
+                [40.822022, -73.911953],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_37bb4b82850743b93bed46f7c2cfaf87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2bad676d85063689e50247d5c75ce86f.setIcon(icon_37bb4b82850743b93bed46f7c2cfaf87);
+        
+    
+        var popup_23f4426bf4be47e85d3fe8b1d7e2e89e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ff224ab6f9c1750b80c8439ceff5b96 = $(`<div id="html_9ff224ab6f9c1750b80c8439ceff5b96" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-146044<br><strong>Address:</strong> 3125 3 AVENUE</div>`)[0];
+            popup_23f4426bf4be47e85d3fe8b1d7e2e89e.setContent(html_9ff224ab6f9c1750b80c8439ceff5b96);
+        
+
+        marker_2bad676d85063689e50247d5c75ce86f.bindPopup(popup_23f4426bf4be47e85d3fe8b1d7e2e89e)
+        ;
+
+        
+    
+    
+            var marker_6c6b4577acfbefda1fcb1b0395706223 = L.marker(
+                [40.820115, -73.89109],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_b4f8dd3f1885ed7220c946aeafac60e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6c6b4577acfbefda1fcb1b0395706223.setIcon(icon_b4f8dd3f1885ed7220c946aeafac60e3);
+        
+    
+        var popup_b363b5b555a5abb910c7acf51ef0bf99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ad96346f3042166a822e61de710eb61 = $(`<div id="html_8ad96346f3042166a822e61de710eb61" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-02-145558<br><strong>Address:</strong> 985 BRUCKNER BOULEVARD</div>`)[0];
+            popup_b363b5b555a5abb910c7acf51ef0bf99.setContent(html_8ad96346f3042166a822e61de710eb61);
+        
+
+        marker_6c6b4577acfbefda1fcb1b0395706223.bindPopup(popup_b363b5b555a5abb910c7acf51ef0bf99)
+        ;
+
+        
+    
+    
+            var marker_3b4ab20cd9538f35d9e0234f2dca73f7 = L.marker(
+                [40.816692, -73.916719],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_a300f3a562bb688ac56618716e920049 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3b4ab20cd9538f35d9e0234f2dca73f7.setIcon(icon_a300f3a562bb688ac56618716e920049);
+        
+    
+        var popup_190d193fb22251e8e1087dbfe9fa9f7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f105ce8322ccb49485bc293ec8e39290 = $(`<div id="html_f105ce8322ccb49485bc293ec8e39290" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-123208<br><strong>Address:</strong> 2883 3 AVENUE</div>`)[0];
+            popup_190d193fb22251e8e1087dbfe9fa9f7d.setContent(html_f105ce8322ccb49485bc293ec8e39290);
+        
+
+        marker_3b4ab20cd9538f35d9e0234f2dca73f7.bindPopup(popup_190d193fb22251e8e1087dbfe9fa9f7d)
+        ;
+
+        
+    
+    
+            var marker_18af0809e764df7a09d90751600bbafd = L.marker(
+                [40.80891, -73.922209],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_54d542055ea55e7e899375366512370f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_18af0809e764df7a09d90751600bbafd.setIcon(icon_54d542055ea55e7e899375366512370f);
+        
+    
+        var popup_b225b1c713ec2a2f7cbf90b44795b337 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_281741a3771a69d3c3d3d0030256e5b0 = $(`<div id="html_281741a3771a69d3c3d3d0030256e5b0" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-102011<br><strong>Address:</strong> 417 EAST 138 STREET</div>`)[0];
+            popup_b225b1c713ec2a2f7cbf90b44795b337.setContent(html_281741a3771a69d3c3d3d0030256e5b0);
+        
+
+        marker_18af0809e764df7a09d90751600bbafd.bindPopup(popup_b225b1c713ec2a2f7cbf90b44795b337)
+        ;
+
+        
+    
+    
+            var marker_a00324b367e294b053987f058e7fd1e5 = L.marker(
+                [40.816679, -73.916483],
+                {}
+            ).addTo(feature_group_0577e7c1301c34e1d69fc4afea85330f);
+        
+    
+            var icon_29aaa2ac7afaae6aa01915495175610b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a00324b367e294b053987f058e7fd1e5.setIcon(icon_29aaa2ac7afaae6aa01915495175610b);
+        
+    
+        var popup_7a19dcafccaef4833768961067c12285 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3619788a11365ddcc001a706666fa10 = $(`<div id="html_d3619788a11365ddcc001a706666fa10" style="width: 100.0%; height: 100.0%;"><strong>Site ID:</strong> bx-01-118956<br><strong>Address:</strong> 2882 3 AVENUE</div>`)[0];
+            popup_7a19dcafccaef4833768961067c12285.setContent(html_d3619788a11365ddcc001a706666fa10);
+        
+
+        marker_a00324b367e294b053987f058e7fd1e5.bindPopup(popup_7a19dcafccaef4833768961067c12285)
+        ;
+
+        
+    
+    
+            var feature_group_3eb4d740c68df03d661812054e5bcb79 = L.featureGroup(
+                {}
+            ).addTo(map_c569ddb2e2b9d99346a30f6e35a5c6fd);
+        
+    
+            var marker_0ced992b29f105df7108899db2bd768f = L.marker(
+                [40.812626, -73.922904],
+                {}
+            ).addTo(feature_group_3eb4d740c68df03d661812054e5bcb79);
+        
+    
+            var icon_bfbef2b20d4b5b042c65ab2c225b6577 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0ced992b29f105df7108899db2bd768f.setIcon(icon_bfbef2b20d4b5b042c65ab2c225b6577);
+        
+    
+        var popup_e84e3e116a6f2cb008350098c8eeca9e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_624bd8c90a32ab6dde0419ddd3b1f94b = $(`<div id="html_624bd8c90a32ab6dde0419ddd3b1f94b" style="width: 100.0%; height: 100.0%;"><strong>Mott Haven Library</strong><br>321 E 140th St<br>CB1</div>`)[0];
+            popup_e84e3e116a6f2cb008350098c8eeca9e.setContent(html_624bd8c90a32ab6dde0419ddd3b1f94b);
+        
+
+        marker_0ced992b29f105df7108899db2bd768f.bindPopup(popup_e84e3e116a6f2cb008350098c8eeca9e)
+        ;
+
+        
+    
+    
+            var marker_8a342a633bc61c3cd34f71c353a37e8e = L.marker(
+                [40.825122, -73.915005],
+                {}
+            ).addTo(feature_group_3eb4d740c68df03d661812054e5bcb79);
+        
+    
+            var icon_d029c5a6d7aedfa1004030a8762c370b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_8a342a633bc61c3cd34f71c353a37e8e.setIcon(icon_d029c5a6d7aedfa1004030a8762c370b);
+        
+    
+        var popup_083383b4a9e1644c1b057bea18871322 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8f22430c6904b009a888f11efaf2fca5 = $(`<div id="html_8f22430c6904b009a888f11efaf2fca5" style="width: 100.0%; height: 100.0%;"><strong>Melrose Library</strong><br>910 Morris Ave<br>CB1</div>`)[0];
+            popup_083383b4a9e1644c1b057bea18871322.setContent(html_8f22430c6904b009a888f11efaf2fca5);
+        
+
+        marker_8a342a633bc61c3cd34f71c353a37e8e.bindPopup(popup_083383b4a9e1644c1b057bea18871322)
+        ;
+
+        
+    
+    
+            var marker_7ff5bd85e3b843c87bfc44897c583992 = L.marker(
+                [40.831452, -73.901743],
+                {}
+            ).addTo(feature_group_3eb4d740c68df03d661812054e5bcb79);
+        
+    
+            var icon_ea3977056403c26969259cbf5af3102d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7ff5bd85e3b843c87bfc44897c583992.setIcon(icon_ea3977056403c26969259cbf5af3102d);
+        
+    
+        var popup_1df652a7edc70f38d7d079eae31d300d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f815fe42d8cf6ddd1f5eda147daca55 = $(`<div id="html_3f815fe42d8cf6ddd1f5eda147daca55" style="width: 100.0%; height: 100.0%;"><strong>Morrisania Library</strong><br>610 E 169th St<br>CB2</div>`)[0];
+            popup_1df652a7edc70f38d7d079eae31d300d.setContent(html_3f815fe42d8cf6ddd1f5eda147daca55);
+        
+
+        marker_7ff5bd85e3b843c87bfc44897c583992.bindPopup(popup_1df652a7edc70f38d7d079eae31d300d)
+        ;
+
+        
+    
+    
+            var marker_a97525ad9e347395ac8c3817d4fc6b3b = L.marker(
+                [40.906712, -73.901503],
+                {}
+            ).addTo(feature_group_3eb4d740c68df03d661812054e5bcb79);
+        
+    
+            var icon_d5abf65377e5c59a28e49fee81402974 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a97525ad9e347395ac8c3817d4fc6b3b.setIcon(icon_d5abf65377e5c59a28e49fee81402974);
+        
+    
+        var popup_a687635bd54607bd58095deabfd96358 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a508ab8bd6a924b5384aa0b6361c0138 = $(`<div id="html_a508ab8bd6a924b5384aa0b6361c0138" style="width: 100.0%; height: 100.0%;"><strong>Riverdale Library</strong><br>5540 Mosholu Ave<br>CB8</div>`)[0];
+            popup_a687635bd54607bd58095deabfd96358.setContent(html_a508ab8bd6a924b5384aa0b6361c0138);
+        
+
+        marker_a97525ad9e347395ac8c3817d4fc6b3b.bindPopup(popup_a687635bd54607bd58095deabfd96358)
+        ;
+
+        
+    
+    
+            var marker_f3f8044e7789e8b8e9d577dcf629e23d = L.marker(
+                [40.880325, -73.904948],
+                {}
+            ).addTo(feature_group_3eb4d740c68df03d661812054e5bcb79);
+        
+    
+            var icon_4c7d6a012800ff720dfff41dcadb7a33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f3f8044e7789e8b8e9d577dcf629e23d.setIcon(icon_4c7d6a012800ff720dfff41dcadb7a33);
+        
+    
+        var popup_890e931af63aa992e199d6f0ad1773fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0dd701612bf60ccc33c5e0c36880ea0 = $(`<div id="html_b0dd701612bf60ccc33c5e0c36880ea0" style="width: 100.0%; height: 100.0%;"><strong>Kingsbridge Library</strong><br>291 W 231st St<br>CB8</div>`)[0];
+            popup_890e931af63aa992e199d6f0ad1773fc.setContent(html_b0dd701612bf60ccc33c5e0c36880ea0);
+        
+
+        marker_f3f8044e7789e8b8e9d577dcf629e23d.bindPopup(popup_890e931af63aa992e199d6f0ad1773fc)
+        ;
+
+        
+    
+    
+            var marker_37175be22396bb86612ccde2ca4e5c53 = L.marker(
+                [40.826314, -73.828972],
+                {}
+            ).addTo(feature_group_3eb4d740c68df03d661812054e5bcb79);
+        
+    
+            var icon_d056943b4254270a014d6be081aa90d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_37175be22396bb86612ccde2ca4e5c53.setIcon(icon_d056943b4254270a014d6be081aa90d6);
+        
+    
+        var popup_6b6e883b5e1da7099f90dc8800150f85 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_010a4970553270bfa605e9e4f6d7c4ad = $(`<div id="html_010a4970553270bfa605e9e4f6d7c4ad" style="width: 100.0%; height: 100.0%;"><strong>Throgs Neck Library</strong><br>3025 Cross Bronx Expressway<br>CB10</div>`)[0];
+            popup_6b6e883b5e1da7099f90dc8800150f85.setContent(html_010a4970553270bfa605e9e4f6d7c4ad);
+        
+
+        marker_37175be22396bb86612ccde2ca4e5c53.bindPopup(popup_6b6e883b5e1da7099f90dc8800150f85)
+        ;
+
+        
+    
+    
+            var marker_72253ffe04069db4e3dcb10ca72dddab = L.marker(
+                [40.84695, -73.831745],
+                {}
+            ).addTo(feature_group_3eb4d740c68df03d661812054e5bcb79);
+        
+    
+            var icon_b020856a815f8c6c7fa9a73083a44e22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_72253ffe04069db4e3dcb10ca72dddab.setIcon(icon_b020856a815f8c6c7fa9a73083a44e22);
+        
+    
+        var popup_6c7885e6c39568f50f6995d64c14c625 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6bef535b7781eb163abad0d7b0ca11a = $(`<div id="html_e6bef535b7781eb163abad0d7b0ca11a" style="width: 100.0%; height: 100.0%;"><strong>Pelham Bay Library</strong><br>3060 Middletown Rd<br>CB10</div>`)[0];
+            popup_6c7885e6c39568f50f6995d64c14c625.setContent(html_e6bef535b7781eb163abad0d7b0ca11a);
+        
+
+        marker_72253ffe04069db4e3dcb10ca72dddab.bindPopup(popup_6c7885e6c39568f50f6995d64c14c625)
+        ;
+
+        
+    
+    
+            var feature_group_d952dc84bb2d8663b72611735d5fcda4 = L.featureGroup(
+                {}
+            ).addTo(map_c569ddb2e2b9d99346a30f6e35a5c6fd);
+        
+    
+            var marker_95cbdff4de9489a43b2c8cef1849e1d5 = L.marker(
+                [40.82207, -73.886499],
+                {}
+            ).addTo(feature_group_d952dc84bb2d8663b72611735d5fcda4);
+        
+    
+            var icon_17f7e8531e952adfa7b57ada191d08e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "briefcase", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_95cbdff4de9489a43b2c8cef1849e1d5.setIcon(icon_17f7e8531e952adfa7b57ada191d08e9);
+        
+    
+        var popup_dd4c7c72bb8de91f2bcdcffe9ca572e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a334a1549797e1ec5d7f94a415006f47 = $(`<div id="html_a334a1549797e1ec5d7f94a415006f47" style="width: 100.0%; height: 100.0%;"><strong>Hunts Point Workforce1 Career Center</strong><br>1029 E 163rd St<br>CB2</div>`)[0];
+            popup_dd4c7c72bb8de91f2bcdcffe9ca572e6.setContent(html_a334a1549797e1ec5d7f94a415006f47);
+        
+
+        marker_95cbdff4de9489a43b2c8cef1849e1d5.bindPopup(popup_dd4c7c72bb8de91f2bcdcffe9ca572e6)
+        ;
+
+        
+    
+    
+            var marker_156543ac5e3631ee572d6ac6d7f0c0b8 = L.marker(
+                [40.841289, -73.88569],
+                {}
+            ).addTo(feature_group_d952dc84bb2d8663b72611735d5fcda4);
+        
+    
+            var icon_53f2be3d2c047b519349fbe9f5ad6d41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "briefcase", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_156543ac5e3631ee572d6ac6d7f0c0b8.setIcon(icon_53f2be3d2c047b519349fbe9f5ad6d41);
+        
+    
+        var popup_e60d89f009d16d026287d29f806822b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b17220909f5307b4d0898507c6d3041 = $(`<div id="html_3b17220909f5307b4d0898507c6d3041" style="width: 100.0%; height: 100.0%;"><strong>West Farms Workforce1 Career Center</strong><br>901 E Tremont Ave<br>CB2</div>`)[0];
+            popup_e60d89f009d16d026287d29f806822b6.setContent(html_3b17220909f5307b4d0898507c6d3041);
+        
+
+        marker_156543ac5e3631ee572d6ac6d7f0c0b8.bindPopup(popup_e60d89f009d16d026287d29f806822b6)
+        ;
+
+        
+    
+    
+            var marker_2e770c1a7188aa07ccd26526390b3019 = L.marker(
+                [40.807687, -73.922045],
+                {}
+            ).addTo(feature_group_d952dc84bb2d8663b72611735d5fcda4);
+        
+    
+            var icon_edd847c9db87a4b58e7a6924c8b2dd99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "briefcase", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_2e770c1a7188aa07ccd26526390b3019.setIcon(icon_edd847c9db87a4b58e7a6924c8b2dd99);
+        
+    
+        var popup_7496e43b9c5dc538ff2d85ccc377e8af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3b13cd09809db70672977787b68d821 = $(`<div id="html_f3b13cd09809db70672977787b68d821" style="width: 100.0%; height: 100.0%;"><strong>Bronx Workforce1 Industrial & Transportation Center</strong><br>14 Bruckner Blvd<br>CB2</div>`)[0];
+            popup_7496e43b9c5dc538ff2d85ccc377e8af.setContent(html_f3b13cd09809db70672977787b68d821);
+        
+
+        marker_2e770c1a7188aa07ccd26526390b3019.bindPopup(popup_7496e43b9c5dc538ff2d85ccc377e8af)
+        ;
+
+        
+    
+    
+            var feature_group_2f5fc0e2cb706b66c5178dd0428e055f = L.featureGroup(
+                {}
+            ).addTo(map_c569ddb2e2b9d99346a30f6e35a5c6fd);
+        
+    
+            var marker_6bf2cb20ed7daa2092963e9d7d4098d0 = L.marker(
+                [40.8104, -73.9213],
+                {}
+            ).addTo(feature_group_2f5fc0e2cb706b66c5178dd0428e055f);
+        
+    
+            var icon_01667d14a2202ac153c1d8a7f0fdc526 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "users", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_6bf2cb20ed7daa2092963e9d7d4098d0.setIcon(icon_01667d14a2202ac153c1d8a7f0fdc526);
+        
+    
+        var popup_7dbbfbc4c2d736617e7a27e1f9876487 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b060369f296b89a2d333e41f45d208f = $(`<div id="html_0b060369f296b89a2d333e41f45d208f" style="width: 100.0%; height: 100.0%;"><strong>Patterson Community Center</strong><br>340 Morris Avenue<br>CB1</div>`)[0];
+            popup_7dbbfbc4c2d736617e7a27e1f9876487.setContent(html_0b060369f296b89a2d333e41f45d208f);
+        
+
+        marker_6bf2cb20ed7daa2092963e9d7d4098d0.bindPopup(popup_7dbbfbc4c2d736617e7a27e1f9876487)
+        ;
+
+        
+    
+    
+            var marker_cbfdbc514c89000536dbfa371494223e = L.marker(
+                [40.81799, -73.92751],
+                {}
+            ).addTo(feature_group_2f5fc0e2cb706b66c5178dd0428e055f);
+        
+    
+            var icon_ebbb6a804fd1a22d7b1c5761bbd53228 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "users", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_cbfdbc514c89000536dbfa371494223e.setIcon(icon_ebbb6a804fd1a22d7b1c5761bbd53228);
+        
+    
+        var popup_37d99fdab50f4d59eeab70052b6e38e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_229373bca6984cecaa553386afb6c643 = $(`<div id="html_229373bca6984cecaa553386afb6c643" style="width: 100.0%; height: 100.0%;"><strong>Hostos Community College</strong><br>500 Grand Concourse<br>CB1</div>`)[0];
+            popup_37d99fdab50f4d59eeab70052b6e38e4.setContent(html_229373bca6984cecaa553386afb6c643);
+        
+
+        marker_cbfdbc514c89000536dbfa371494223e.bindPopup(popup_37d99fdab50f4d59eeab70052b6e38e4)
+        ;
+
+        
+    
+    
+            var marker_5117f030efafd1752b8018db19a5f9eb = L.marker(
+                [40.80718, -73.9176],
+                {}
+            ).addTo(feature_group_2f5fc0e2cb706b66c5178dd0428e055f);
+        
+    
+            var icon_7257afd13ed56846007c16984ec8d3e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "users", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_5117f030efafd1752b8018db19a5f9eb.setIcon(icon_7257afd13ed56846007c16984ec8d3e7);
+        
+    
+        var popup_86051fb7d813c11e9d857d6718882157 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c119e6ebb743c4fff4a5f2c4feecb421 = $(`<div id="html_c119e6ebb743c4fff4a5f2c4feecb421" style="width: 100.0%; height: 100.0%;"><strong>Mill Brook Community Center</strong><br>201 St. Ann’s Avenue<br>CB2</div>`)[0];
+            popup_86051fb7d813c11e9d857d6718882157.setContent(html_c119e6ebb743c4fff4a5f2c4feecb421);
+        
+
+        marker_5117f030efafd1752b8018db19a5f9eb.bindPopup(popup_86051fb7d813c11e9d857d6718882157)
+        ;
+
+        
+    
+    
+            var marker_db6a8deb78e0f0fe8e87cbffc904e0e3 = L.marker(
+                [40.90545, -73.90225],
+                {}
+            ).addTo(feature_group_2f5fc0e2cb706b66c5178dd0428e055f);
+        
+    
+            var icon_41a7c32725231bbccee88b619c9c0973 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "users", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_db6a8deb78e0f0fe8e87cbffc904e0e3.setIcon(icon_41a7c32725231bbccee88b619c9c0973);
+        
+    
+        var popup_a17e4f4405c397f377cccd38c4ed93b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa90252be4dad3e7fe0f3b5446e5f461 = $(`<div id="html_fa90252be4dad3e7fe0f3b5446e5f461" style="width: 100.0%; height: 100.0%;"><strong>Riverdale Neighborhood House</strong><br>5521 Mosholu Avenue<br>CB8</div>`)[0];
+            popup_a17e4f4405c397f377cccd38c4ed93b8.setContent(html_fa90252be4dad3e7fe0f3b5446e5f461);
+        
+
+        marker_db6a8deb78e0f0fe8e87cbffc904e0e3.bindPopup(popup_a17e4f4405c397f377cccd38c4ed93b8)
+        ;
+
+        
+    
+    
+            var marker_cd7c2dcc701650c3822db85c6f2300ae = L.marker(
+                [40.87293, -73.82306],
+                {}
+            ).addTo(feature_group_2f5fc0e2cb706b66c5178dd0428e055f);
+        
+    
+            var icon_6de51195953c536eb9be2d9bb4f9a5c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "users", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_cd7c2dcc701650c3822db85c6f2300ae.setIcon(icon_6de51195953c536eb9be2d9bb4f9a5c9);
+        
+    
+        var popup_9a3f8a94304a13683921cc0abfa686fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9337ce1c242ddc30f2b4e527a7a7338e = $(`<div id="html_9337ce1c242ddc30f2b4e527a7a7338e" style="width: 100.0%; height: 100.0%;"><strong>JASA Co-op City</strong><br>135 Einstein Loop N<br>CB10</div>`)[0];
+            popup_9a3f8a94304a13683921cc0abfa686fc.setContent(html_9337ce1c242ddc30f2b4e527a7a7338e);
+        
+
+        marker_cd7c2dcc701650c3822db85c6f2300ae.bindPopup(popup_9a3f8a94304a13683921cc0abfa686fc)
+        ;
+
+        
+    
+    
+            var layer_control_e38cf9c142a8f4abc965a52349afe3b7 = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_2cdf70e0dc2bca3f0920b4d1ef59da86,
+                },
+                overlays :  {
+                    "Wi-Fi Kiosks" : feature_group_0577e7c1301c34e1d69fc4afea85330f,
+                    "Libraries" : feature_group_3eb4d740c68df03d661812054e5bcb79,
+                    "Workforce1 Centers" : feature_group_d952dc84bb2d8663b72611735d5fcda4,
+                    "Community Centers" : feature_group_2f5fc0e2cb706b66c5178dd0428e055f,
+                },
+            };
+            L.control.layers(
+                layer_control_e38cf9c142a8f4abc965a52349afe3b7.base_layers,
+                layer_control_e38cf9c142a8f4abc965a52349afe3b7.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_c569ddb2e2b9d99346a30f6e35a5c6fd);
+        
+</script>
+</html>
