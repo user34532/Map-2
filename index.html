@@ -1,0 +1,2539 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aa84c421ebe9e197475f6c87293087c7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_aa84c421ebe9e197475f6c87293087c7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_aa84c421ebe9e197475f6c87293087c7 = L.map(
+                "map_aa84c421ebe9e197475f6c87293087c7",
+                {
+                    center: [40.8448, -73.8648],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_59d18b2a3214120c92a601d5aef80d8d = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_aa84c421ebe9e197475f6c87293087c7);
+        
+    
+            var rectangle_2726b73df327388527e37fe851a33cfc = L.rectangle(
+                [[40.8, -73.935], [40.826, -73.9]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_aa84c421ebe9e197475f6c87293087c7);
+        
+    
+        var popup_7507194fdbef77be234831241d444565 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c2af3e9a7f670b67bb4636bd0a9f61a = $(`<div id="html_1c2af3e9a7f670b67bb4636bd0a9f61a" style="width: 100.0%; height: 100.0%;">District 1: Mott Haven, Melrose, Port Morris</div>`)[0];
+            popup_7507194fdbef77be234831241d444565.setContent(html_1c2af3e9a7f670b67bb4636bd0a9f61a);
+        
+
+        rectangle_2726b73df327388527e37fe851a33cfc.bindPopup(popup_7507194fdbef77be234831241d444565)
+        ;
+
+        
+    
+    
+            rectangle_2726b73df327388527e37fe851a33cfc.bindTooltip(
+                `<div>
+                     District 1: Mott Haven, Melrose, Port Morris
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var rectangle_ee3ea4f6832aefc1095e08b9b3aa4433 = L.rectangle(
+                [[40.82, -73.92], [40.845, -73.865]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_aa84c421ebe9e197475f6c87293087c7);
+        
+    
+        var popup_2417505d25cacd334cd3328ee6841e23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8c0119eba4d74678aa3300d0fa82241 = $(`<div id="html_a8c0119eba4d74678aa3300d0fa82241" style="width: 100.0%; height: 100.0%;">District 2: Morrisania, Longwood, Hunts Point</div>`)[0];
+            popup_2417505d25cacd334cd3328ee6841e23.setContent(html_a8c0119eba4d74678aa3300d0fa82241);
+        
+
+        rectangle_ee3ea4f6832aefc1095e08b9b3aa4433.bindPopup(popup_2417505d25cacd334cd3328ee6841e23)
+        ;
+
+        
+    
+    
+            rectangle_ee3ea4f6832aefc1095e08b9b3aa4433.bindTooltip(
+                `<div>
+                     District 2: Morrisania, Longwood, Hunts Point
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var rectangle_e32e05ebb302dca723aacbfa9c4a2653 = L.rectangle(
+                [[40.87, -73.93], [40.915, -73.865]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_aa84c421ebe9e197475f6c87293087c7);
+        
+    
+        var popup_84fa3fd6b7be42aba3528494dd414799 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_819f9daa8ae4f3d3e506cce22d7ac01e = $(`<div id="html_819f9daa8ae4f3d3e506cce22d7ac01e" style="width: 100.0%; height: 100.0%;">District 8: Riverdale, Kingsbridge, Marble Hill</div>`)[0];
+            popup_84fa3fd6b7be42aba3528494dd414799.setContent(html_819f9daa8ae4f3d3e506cce22d7ac01e);
+        
+
+        rectangle_e32e05ebb302dca723aacbfa9c4a2653.bindPopup(popup_84fa3fd6b7be42aba3528494dd414799)
+        ;
+
+        
+    
+    
+            rectangle_e32e05ebb302dca723aacbfa9c4a2653.bindTooltip(
+                `<div>
+                     District 8: Riverdale, Kingsbridge, Marble Hill
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var rectangle_48331261c3c061f030faa3faea26b3f7 = L.rectangle(
+                [[40.825, -73.865], [40.88, -73.79]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_aa84c421ebe9e197475f6c87293087c7);
+        
+    
+        var popup_d62ab843957bcf3ddf895136dbb1bcb1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_192aadd4968484d3a1945a975060f7cc = $(`<div id="html_192aadd4968484d3a1945a975060f7cc" style="width: 100.0%; height: 100.0%;">District 10: Throgs Neck, Country Club, Co-op City, Pelham Bay</div>`)[0];
+            popup_d62ab843957bcf3ddf895136dbb1bcb1.setContent(html_192aadd4968484d3a1945a975060f7cc);
+        
+
+        rectangle_48331261c3c061f030faa3faea26b3f7.bindPopup(popup_d62ab843957bcf3ddf895136dbb1bcb1)
+        ;
+
+        
+    
+    
+            rectangle_48331261c3c061f030faa3faea26b3f7.bindTooltip(
+                `<div>
+                     District 10: Throgs Neck, Country Club, Co-op City, Pelham Bay
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_a679a4ddf4a719528e49eba7b3f0a0e1 = L.featureGroup(
+                {}
+            ).addTo(map_aa84c421ebe9e197475f6c87293087c7);
+        
+    
+            var marker_2b1237b965148b2457ca43bb4fd71ab2 = L.marker(
+                [40.80682, -73.917657],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_b02db90db7cf4926f66a496d38e51258 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2b1237b965148b2457ca43bb4fd71ab2.setIcon(icon_b02db90db7cf4926f66a496d38e51258);
+        
+    
+        var popup_cc650491b2d42a3791bbf18211a2e7b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2d46a6122a82b760c43ead8d01e3a6d = $(`<div id="html_d2d46a6122a82b760c43ead8d01e3a6d" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-119011<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 548 EAST 138 STREET</div>`)[0];
+            popup_cc650491b2d42a3791bbf18211a2e7b2.setContent(html_d2d46a6122a82b760c43ead8d01e3a6d);
+        
+
+        marker_2b1237b965148b2457ca43bb4fd71ab2.bindPopup(popup_cc650491b2d42a3791bbf18211a2e7b2)
+        ;
+
+        
+    
+    
+            var marker_812a603a9a70bfed77ded3328f0e9f32 = L.marker(
+                [40.819394, -73.916163],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_3327e12ca005b07c94fce4be0b86ffd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_812a603a9a70bfed77ded3328f0e9f32.setIcon(icon_3327e12ca005b07c94fce4be0b86ffd9);
+        
+    
+        var popup_b4c7322b1f3a8c0ecd726ac47c50fca5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e18751aa21214d07006c5492d6fdf9d4 = $(`<div id="html_e18751aa21214d07006c5492d6fdf9d4" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-146074<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 680 MELROSE AVENUE</div>`)[0];
+            popup_b4c7322b1f3a8c0ecd726ac47c50fca5.setContent(html_e18751aa21214d07006c5492d6fdf9d4);
+        
+
+        marker_812a603a9a70bfed77ded3328f0e9f32.bindPopup(popup_b4c7322b1f3a8c0ecd726ac47c50fca5)
+        ;
+
+        
+    
+    
+            var marker_6d3e283d70080f0a6f5aab59b994717f = L.marker(
+                [40.810896, -73.921434],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_a5e7fb6951e743c230d938adc540bb57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6d3e283d70080f0a6f5aab59b994717f.setIcon(icon_a5e7fb6951e743c230d938adc540bb57);
+        
+    
+        var popup_a498b7edc1250ef3de36ac3ec1af0aa1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed40c9b45619cd98f66fa1e5065fc8cb = $(`<div id="html_ed40c9b45619cd98f66fa1e5065fc8cb" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-138789<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 312 WILLIS AVENUE</div>`)[0];
+            popup_a498b7edc1250ef3de36ac3ec1af0aa1.setContent(html_ed40c9b45619cd98f66fa1e5065fc8cb);
+        
+
+        marker_6d3e283d70080f0a6f5aab59b994717f.bindPopup(popup_a498b7edc1250ef3de36ac3ec1af0aa1)
+        ;
+
+        
+    
+    
+            var marker_ff58c995b6c0d3aa303d06221690af79 = L.marker(
+                [40.823858, -73.89396],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_18f70229733e92e8df5a7261f579d967 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ff58c995b6c0d3aa303d06221690af79.setIcon(icon_18f70229733e92e8df5a7261f579d967);
+        
+    
+        var popup_be968f7f93fb464cd73d4d18c58f47e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca5722b152e310421e763548aae48874 = $(`<div id="html_ca5722b152e310421e763548aae48874" style="width: 100.0%; height: 100.0%;"><strong>District 2: Morrisania, Longwood, Hunts Point</strong><br><strong>Site ID:</strong> bx-02-157103<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 995 WESTCHESTER AVENUE</div>`)[0];
+            popup_be968f7f93fb464cd73d4d18c58f47e8.setContent(html_ca5722b152e310421e763548aae48874);
+        
+
+        marker_ff58c995b6c0d3aa303d06221690af79.bindPopup(popup_be968f7f93fb464cd73d4d18c58f47e8)
+        ;
+
+        
+    
+    
+            var marker_3f29a0e2b466d99ca2371f17aa79ed1e = L.marker(
+                [40.816752, -73.929243],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_839f180fb922bdd9523328b69ae4885d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3f29a0e2b466d99ca2371f17aa79ed1e.setIcon(icon_839f180fb922bdd9523328b69ae4885d);
+        
+    
+        var popup_171896264ab446fca2a88f43106d7121 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4185f29d36e5d728af1c844062275dcf = $(`<div id="html_4185f29d36e5d728af1c844062275dcf" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-145820<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 140 EAST 144 STREET</div>`)[0];
+            popup_171896264ab446fca2a88f43106d7121.setContent(html_4185f29d36e5d728af1c844062275dcf);
+        
+
+        marker_3f29a0e2b466d99ca2371f17aa79ed1e.bindPopup(popup_171896264ab446fca2a88f43106d7121)
+        ;
+
+        
+    
+    
+            var marker_876c9ae9138cb7da9b106c41712a96f7 = L.marker(
+                [40.817512, -73.928886],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_3262e38ff28a1a468eed45feec597026 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_876c9ae9138cb7da9b106c41712a96f7.setIcon(icon_3262e38ff28a1a468eed45feec597026);
+        
+    
+        var popup_b33d38fb896dca2671ff36de5579d80d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a014a983f736cc5062f5174781c4d29 = $(`<div id="html_7a014a983f736cc5062f5174781c4d29" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-145819<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 135 EAST 146 STREET</div>`)[0];
+            popup_b33d38fb896dca2671ff36de5579d80d.setContent(html_7a014a983f736cc5062f5174781c4d29);
+        
+
+        marker_876c9ae9138cb7da9b106c41712a96f7.bindPopup(popup_b33d38fb896dca2671ff36de5579d80d)
+        ;
+
+        
+    
+    
+            var marker_cd6f81dec740990eb70c0bea053a0fbe = L.marker(
+                [40.818017, -73.916791],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_d977b1bc3ea519db687a481de0b756ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_cd6f81dec740990eb70c0bea053a0fbe.setIcon(icon_d977b1bc3ea519db687a481de0b756ce);
+        
+    
+        var popup_434970f776aa5c74b6b529d5215c6e16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6edc80e4e2459402bc069322a883a409 = $(`<div id="html_6edc80e4e2459402bc069322a883a409" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-146062<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 624 MELROSE AVENUE</div>`)[0];
+            popup_434970f776aa5c74b6b529d5215c6e16.setContent(html_6edc80e4e2459402bc069322a883a409);
+        
+
+        marker_cd6f81dec740990eb70c0bea053a0fbe.bindPopup(popup_434970f776aa5c74b6b529d5215c6e16)
+        ;
+
+        
+    
+    
+            var marker_4a62cba09bc02be5f1c614e7df8c1224 = L.marker(
+                [40.8366, -73.84436],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_431cc0fcc9c99d423e488d8ddc68e66b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4a62cba09bc02be5f1c614e7df8c1224.setIcon(icon_431cc0fcc9c99d423e488d8ddc68e66b);
+        
+    
+        var popup_4140c2443dcf6cae7a5ee45ec8db2d32 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb09651708ca02a4aa913bcef27f3cba = $(`<div id="html_cb09651708ca02a4aa913bcef27f3cba" style="width: 100.0%; height: 100.0%;"><strong>District 10: Throgs Neck, Country Club, Co-op City, Pelham Bay</strong><br><strong>Site ID:</strong> bx-10-160008<br><strong>Type:</strong> Link5G_NonAd<br><strong>Status:</strong> Live<br><strong>Address:</strong> 1331 HERSCHELL STREET</div>`)[0];
+            popup_4140c2443dcf6cae7a5ee45ec8db2d32.setContent(html_cb09651708ca02a4aa913bcef27f3cba);
+        
+
+        marker_4a62cba09bc02be5f1c614e7df8c1224.bindPopup(popup_4140c2443dcf6cae7a5ee45ec8db2d32)
+        ;
+
+        
+    
+    
+            var marker_fccdd808b317cf081595749b0dd7ef7e = L.marker(
+                [40.808544, -73.929074],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_5670a5ebf546474efa6bb7794f82c554 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fccdd808b317cf081595749b0dd7ef7e.setIcon(icon_5670a5ebf546474efa6bb7794f82c554);
+        
+    
+        var popup_21f70043cec56c6aa6562c996e2745f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_56e17949d82d0429b5c3a7edbfaeb284 = $(`<div id="html_56e17949d82d0429b5c3a7edbfaeb284" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-145852<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 141 LINCOLN AVENUE</div>`)[0];
+            popup_21f70043cec56c6aa6562c996e2745f0.setContent(html_56e17949d82d0429b5c3a7edbfaeb284);
+        
+
+        marker_fccdd808b317cf081595749b0dd7ef7e.bindPopup(popup_21f70043cec56c6aa6562c996e2745f0)
+        ;
+
+        
+    
+    
+            var marker_41ac5c6086d857480f0d9cb076569707 = L.marker(
+                [40.81851, -73.914614],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_cdfdadb787f4193d1c0662a3854d086b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_41ac5c6086d857480f0d9cb076569707.setIcon(icon_cdfdadb787f4193d1c0662a3854d086b);
+        
+    
+        var popup_22541dfcc41b2a6a74e7eb429c1c8cfe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93cba9dccfd7411b920a47c1353fc1b7 = $(`<div id="html_93cba9dccfd7411b920a47c1353fc1b7" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-123214<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 2969 3 AVENUE</div>`)[0];
+            popup_22541dfcc41b2a6a74e7eb429c1c8cfe.setContent(html_93cba9dccfd7411b920a47c1353fc1b7);
+        
+
+        marker_41ac5c6086d857480f0d9cb076569707.bindPopup(popup_22541dfcc41b2a6a74e7eb429c1c8cfe)
+        ;
+
+        
+    
+    
+            var marker_5d529babee9f5916d040b55c53b585a4 = L.marker(
+                [40.813998, -73.919171],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_dea9170a6dc7abb423bb007132c7f5be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5d529babee9f5916d040b55c53b585a4.setIcon(icon_dea9170a6dc7abb423bb007132c7f5be);
+        
+    
+        var popup_b3b54676dd9af6bd64522f292fc7b307 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee35507957e3fee3951cbd66bc3dddc5 = $(`<div id="html_ee35507957e3fee3951cbd66bc3dddc5" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-116238<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 460 WILLIS AVENUE</div>`)[0];
+            popup_b3b54676dd9af6bd64522f292fc7b307.setContent(html_ee35507957e3fee3951cbd66bc3dddc5);
+        
+
+        marker_5d529babee9f5916d040b55c53b585a4.bindPopup(popup_b3b54676dd9af6bd64522f292fc7b307)
+        ;
+
+        
+    
+    
+            var marker_ed864dae72dbbfa602d670a7a1932937 = L.marker(
+                [40.826714, -73.891644],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_28be20d16a32ac4ea10a44cfaab8f5d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ed864dae72dbbfa602d670a7a1932937.setIcon(icon_28be20d16a32ac4ea10a44cfaab8f5d8);
+        
+    
+        var popup_d2a4054e9f07f65719a723b1686130ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb8a82160ca2963f455350755a0d8335 = $(`<div id="html_bb8a82160ca2963f455350755a0d8335" style="width: 100.0%; height: 100.0%;"><strong>District 2: Morrisania, Longwood, Hunts Point</strong><br><strong>Site ID:</strong> bx-02-119044<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 962 EAST 167 STREET</div>`)[0];
+            popup_d2a4054e9f07f65719a723b1686130ce.setContent(html_bb8a82160ca2963f455350755a0d8335);
+        
+
+        marker_ed864dae72dbbfa602d670a7a1932937.bindPopup(popup_d2a4054e9f07f65719a723b1686130ce)
+        ;
+
+        
+    
+    
+            var marker_aa7d97563767da9d783bccad70803d25 = L.marker(
+                [40.821058, -73.89213],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_09d2c3731da5f03debd51d1f8c7390ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_aa7d97563767da9d783bccad70803d25.setIcon(icon_09d2c3731da5f03debd51d1f8c7390ae);
+        
+    
+        var popup_163c1d7357aa70c8e1b956c36f29f230 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eaaed8b708de1805f4b21f9c332192d3 = $(`<div id="html_eaaed8b708de1805f4b21f9c332192d3" style="width: 100.0%; height: 100.0%;"><strong>District 2: Morrisania, Longwood, Hunts Point</strong><br><strong>Site ID:</strong> bx-02-111546<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 1025 East 163rd Street</div>`)[0];
+            popup_163c1d7357aa70c8e1b956c36f29f230.setContent(html_eaaed8b708de1805f4b21f9c332192d3);
+        
+
+        marker_aa7d97563767da9d783bccad70803d25.bindPopup(popup_163c1d7357aa70c8e1b956c36f29f230)
+        ;
+
+        
+    
+    
+            var marker_a65c5f6c9872b97b367cc276a4b54c2e = L.marker(
+                [40.828674, -73.896554],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_7a3217d3657fdecd6802a959d1163206 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a65c5f6c9872b97b367cc276a4b54c2e.setIcon(icon_7a3217d3657fdecd6802a959d1163206);
+        
+    
+        var popup_367ba1abdec2e4ab93eb9f7b3387f435 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d63847eeb1c23f015302b11ceb5ccdfd = $(`<div id="html_d63847eeb1c23f015302b11ceb5ccdfd" style="width: 100.0%; height: 100.0%;"><strong>District 2: Morrisania, Longwood, Hunts Point</strong><br><strong>Site ID:</strong> bx-02-158315<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 1251 REV JAMES POLITE AVE</div>`)[0];
+            popup_367ba1abdec2e4ab93eb9f7b3387f435.setContent(html_d63847eeb1c23f015302b11ceb5ccdfd);
+        
+
+        marker_a65c5f6c9872b97b367cc276a4b54c2e.bindPopup(popup_367ba1abdec2e4ab93eb9f7b3387f435)
+        ;
+
+        
+    
+    
+            var marker_a77e7fd7c2cfd470dfa98dc71e5c39d1 = L.marker(
+                [40.816692, -73.919637],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_25b365f8bf2a67a0b67b1cb394a9b1ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a77e7fd7c2cfd470dfa98dc71e5c39d1.setIcon(icon_25b365f8bf2a67a0b67b1cb394a9b1ca);
+        
+    
+        var popup_e309444c9e41ae271825e22fdc8168f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc90b7e2e8cd1a6902670036159ac40c = $(`<div id="html_bc90b7e2e8cd1a6902670036159ac40c" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-123228<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 349 EAST 149 STREET</div>`)[0];
+            popup_e309444c9e41ae271825e22fdc8168f8.setContent(html_bc90b7e2e8cd1a6902670036159ac40c);
+        
+
+        marker_a77e7fd7c2cfd470dfa98dc71e5c39d1.bindPopup(popup_e309444c9e41ae271825e22fdc8168f8)
+        ;
+
+        
+    
+    
+            var marker_0198ba1d6c398a2563304afa05fd7b14 = L.marker(
+                [40.812557, -73.926244],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_1c7cbd2f2f023d28490213d151594d25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0198ba1d6c398a2563304afa05fd7b14.setIcon(icon_1c7cbd2f2f023d28490213d151594d25);
+        
+    
+        var popup_75215c718463cf3cfbf92e30acd21f4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c0633d16e7e8a2c848da7e3d797171e = $(`<div id="html_0c0633d16e7e8a2c848da7e3d797171e" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-146046<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 301 MORRIS AVENUE</div>`)[0];
+            popup_75215c718463cf3cfbf92e30acd21f4b.setContent(html_0c0633d16e7e8a2c848da7e3d797171e);
+        
+
+        marker_0198ba1d6c398a2563304afa05fd7b14.bindPopup(popup_75215c718463cf3cfbf92e30acd21f4b)
+        ;
+
+        
+    
+    
+            var marker_b94118be4bf23888b73872c5b3c0275f = L.marker(
+                [40.814471, -73.912954],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_57fc0319a0bc1a37a995910deb441b7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b94118be4bf23888b73872c5b3c0275f.setIcon(icon_57fc0319a0bc1a37a995910deb441b7e);
+        
+    
+        var popup_7f26aa0bb98ee8eb443e3511c72ec458 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31f6dddb4085df792ce3c847635da95d = $(`<div id="html_31f6dddb4085df792ce3c847635da95d" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-146045<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 563 ST. ANN'S AVENUE</div>`)[0];
+            popup_7f26aa0bb98ee8eb443e3511c72ec458.setContent(html_31f6dddb4085df792ce3c847635da95d);
+        
+
+        marker_b94118be4bf23888b73872c5b3c0275f.bindPopup(popup_7f26aa0bb98ee8eb443e3511c72ec458)
+        ;
+
+        
+    
+    
+            var marker_b8fec6695a64239c5e27e8324dcfc6da = L.marker(
+                [40.808293, -73.923332],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_1da9b8ec3d2368ac70e691ae894edaea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b8fec6695a64239c5e27e8324dcfc6da.setIcon(icon_1da9b8ec3d2368ac70e691ae894edaea);
+        
+    
+        var popup_e52db43a86ebe6e998bc9f0393ea688c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_067dd1f7a70acffdd50c9e94400888ea = $(`<div id="html_067dd1f7a70acffdd50c9e94400888ea" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-146086<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 216 WILLIS AVENUE</div>`)[0];
+            popup_e52db43a86ebe6e998bc9f0393ea688c.setContent(html_067dd1f7a70acffdd50c9e94400888ea);
+        
+
+        marker_b8fec6695a64239c5e27e8324dcfc6da.bindPopup(popup_e52db43a86ebe6e998bc9f0393ea688c)
+        ;
+
+        
+    
+    
+            var marker_0afa2835c23d37b64877972cc4b9f3b1 = L.marker(
+                [40.8101, -73.902862],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_cc27ebe9d95be6b5934da33b054d8e0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0afa2835c23d37b64877972cc4b9f3b1.setIcon(icon_cc27ebe9d95be6b5934da33b054d8e0e);
+        
+    
+        var popup_d4479dc23322a74e7bd510be4cffaf17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cbe1f7f9b41e1675a8dc03e5434fedb6 = $(`<div id="html_cbe1f7f9b41e1675a8dc03e5434fedb6" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-02-145581<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 501 BRUCKNER BOULEVARD</div>`)[0];
+            popup_d4479dc23322a74e7bd510be4cffaf17.setContent(html_cbe1f7f9b41e1675a8dc03e5434fedb6);
+        
+
+        marker_0afa2835c23d37b64877972cc4b9f3b1.bindPopup(popup_d4479dc23322a74e7bd510be4cffaf17)
+        ;
+
+        
+    
+    
+            var marker_d1c2a8a1022a790242cc0b5bec15ef1d = L.marker(
+                [40.816188, -73.909917],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_ea2225bf97414ccf3406d7b9a3939b3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d1c2a8a1022a790242cc0b5bec15ef1d.setIcon(icon_ea2225bf97414ccf3406d7b9a3939b3d);
+        
+    
+        var popup_2c5847d95bafaaf6f2b6fec352fa63e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f251ce72260d758b8aa384b3b6eee793 = $(`<div id="html_f251ce72260d758b8aa384b3b6eee793" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-142736<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 613 WESTCHESTER AVENUE</div>`)[0];
+            popup_2c5847d95bafaaf6f2b6fec352fa63e9.setContent(html_f251ce72260d758b8aa384b3b6eee793);
+        
+
+        marker_d1c2a8a1022a790242cc0b5bec15ef1d.bindPopup(popup_2c5847d95bafaaf6f2b6fec352fa63e9)
+        ;
+
+        
+    
+    
+            var marker_1eb43ff7ab366c984dda1391d99512bc = L.marker(
+                [40.821437, -73.912327],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_cfac0ec05ab642b71f91109361ba3664 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1eb43ff7ab366c984dda1391d99512bc.setIcon(icon_cfac0ec05ab642b71f91109361ba3664);
+        
+    
+        var popup_fff527ebbc7e1290639dd91e9fa0835a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8fbffaf2ed4bc82ab24131a5d3f72271 = $(`<div id="html_8fbffaf2ed4bc82ab24131a5d3f72271" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-144251<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 3097 3 AVENUE</div>`)[0];
+            popup_fff527ebbc7e1290639dd91e9fa0835a.setContent(html_8fbffaf2ed4bc82ab24131a5d3f72271);
+        
+
+        marker_1eb43ff7ab366c984dda1391d99512bc.bindPopup(popup_fff527ebbc7e1290639dd91e9fa0835a)
+        ;
+
+        
+    
+    
+            var marker_d8d3e9c1780a89753972e3b67f4b59ca = L.marker(
+                [40.804706, -73.912933],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_1f0d9d2529bb78c46915eb2f3484324b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d8d3e9c1780a89753972e3b67f4b59ca.setIcon(icon_1f0d9d2529bb78c46915eb2f3484324b);
+        
+    
+        var popup_22db67f5cc2089656be663d396f99992 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f4e984e902c722e3ce973768d40a7ed3 = $(`<div id="html_f4e984e902c722e3ce973768d40a7ed3" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-119017<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 710 EAST 138 STREET</div>`)[0];
+            popup_22db67f5cc2089656be663d396f99992.setContent(html_f4e984e902c722e3ce973768d40a7ed3);
+        
+
+        marker_d8d3e9c1780a89753972e3b67f4b59ca.bindPopup(popup_22db67f5cc2089656be663d396f99992)
+        ;
+
+        
+    
+    
+            var marker_0dd751bd412160a8095022891fc0d670 = L.marker(
+                [40.812441, -73.92925],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_7e4cfd53fd7b34478f58bdd187b146ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0dd751bd412160a8095022891fc0d670.setIcon(icon_7e4cfd53fd7b34478f58bdd187b146ab);
+        
+    
+        var popup_74a0d523f4b7742ab2fdbde01508ae32 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_013ef8611920a5a2933d8f73c05fcd44 = $(`<div id="html_013ef8611920a5a2933d8f73c05fcd44" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-145917<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 200 EAST 138 STREET</div>`)[0];
+            popup_74a0d523f4b7742ab2fdbde01508ae32.setContent(html_013ef8611920a5a2933d8f73c05fcd44);
+        
+
+        marker_0dd751bd412160a8095022891fc0d670.bindPopup(popup_74a0d523f4b7742ab2fdbde01508ae32)
+        ;
+
+        
+    
+    
+            var marker_12ce54b0ef1dcc9b5ffa66a8b677b801 = L.marker(
+                [40.81738, -73.917078],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_9f98fe89623daccfbd6ba97825513f44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_12ce54b0ef1dcc9b5ffa66a8b677b801.setIcon(icon_9f98fe89623daccfbd6ba97825513f44);
+        
+    
+        var popup_870cb73dc517b7b78e894055585cf218 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e01814f6728de81b9edefe2ddefcb092 = $(`<div id="html_e01814f6728de81b9edefe2ddefcb092" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-146066<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 610 MELROSE AVENUE</div>`)[0];
+            popup_870cb73dc517b7b78e894055585cf218.setContent(html_e01814f6728de81b9edefe2ddefcb092);
+        
+
+        marker_12ce54b0ef1dcc9b5ffa66a8b677b801.bindPopup(popup_870cb73dc517b7b78e894055585cf218)
+        ;
+
+        
+    
+    
+            var marker_86d548e7af057a4d1fe3ac121bf17f70 = L.marker(
+                [40.834973, -73.845696],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_d6c8fc1ba2fed132600c565746861eab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_86d548e7af057a4d1fe3ac121bf17f70.setIcon(icon_d6c8fc1ba2fed132600c565746861eab);
+        
+    
+        var popup_545dc771ad0efe7c74b85fa94acfd7e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb9c796d8ea85269ab9965087d663c99 = $(`<div id="html_bb9c796d8ea85269ab9965087d663c99" style="width: 100.0%; height: 100.0%;"><strong>District 10: Throgs Neck, Country Club, Co-op City, Pelham Bay</strong><br><strong>Site ID:</strong> bx-10-160009<br><strong>Type:</strong> Link5G_Ad<br><strong>Status:</strong> Live<br><strong>Address:</strong> 2365 WATERBURY AVENUE</div>`)[0];
+            popup_545dc771ad0efe7c74b85fa94acfd7e5.setContent(html_bb9c796d8ea85269ab9965087d663c99);
+        
+
+        marker_86d548e7af057a4d1fe3ac121bf17f70.bindPopup(popup_545dc771ad0efe7c74b85fa94acfd7e5)
+        ;
+
+        
+    
+    
+            var marker_3e9aced7ab41d616f09ca4907ce15bb3 = L.marker(
+                [40.817235, -73.915829],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_3c142d3a50e885f9da453a073ef62f62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3e9aced7ab41d616f09ca4907ce15bb3.setIcon(icon_3c142d3a50e885f9da453a073ef62f62);
+        
+    
+        var popup_3af379a5c0de932946a7db2998c9ae1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c20fef67ed750ea1ce039bcbd346116 = $(`<div id="html_1c20fef67ed750ea1ce039bcbd346116" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-118944<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 2914 3 AVENUE</div>`)[0];
+            popup_3af379a5c0de932946a7db2998c9ae1c.setContent(html_1c20fef67ed750ea1ce039bcbd346116);
+        
+
+        marker_3e9aced7ab41d616f09ca4907ce15bb3.bindPopup(popup_3af379a5c0de932946a7db2998c9ae1c)
+        ;
+
+        
+    
+    
+            var marker_b63a0812cb00c25b8ee2aea3718e516a = L.marker(
+                [40.823945, -73.895682],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_5209a77be017abcf5c50199142868be9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b63a0812cb00c25b8ee2aea3718e516a.setIcon(icon_5209a77be017abcf5c50199142868be9);
+        
+    
+        var popup_0e487d6a73b9bbde38a5bcff7eaad7a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b92ef7d1e80ba4bd35e7ad7596d6b009 = $(`<div id="html_b92ef7d1e80ba4bd35e7ad7596d6b009" style="width: 100.0%; height: 100.0%;"><strong>District 2: Morrisania, Longwood, Hunts Point</strong><br><strong>Site ID:</strong> bx-02-152585<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 1020 KELLY STREET</div>`)[0];
+            popup_0e487d6a73b9bbde38a5bcff7eaad7a5.setContent(html_b92ef7d1e80ba4bd35e7ad7596d6b009);
+        
+
+        marker_b63a0812cb00c25b8ee2aea3718e516a.bindPopup(popup_0e487d6a73b9bbde38a5bcff7eaad7a5)
+        ;
+
+        
+    
+    
+            var marker_a60c257bffeedcb488560ee23919e17b = L.marker(
+                [40.820914, -73.890458],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_15f429ede8e13ade7cee1cb2ab65a12d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a60c257bffeedcb488560ee23919e17b.setIcon(icon_15f429ede8e13ade7cee1cb2ab65a12d);
+        
+    
+        var popup_cbc81879b5ba8ab8d5e7ba1c75c249f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e2e0f78eaeafa9ef35edcf7554fe64e = $(`<div id="html_5e2e0f78eaeafa9ef35edcf7554fe64e" style="width: 100.0%; height: 100.0%;"><strong>District 2: Morrisania, Longwood, Hunts Point</strong><br><strong>Site ID:</strong> bx-02-119037<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Removed Pending Reinstall<br><strong>Address:</strong> 1055 EAST 163 STREET</div>`)[0];
+            popup_cbc81879b5ba8ab8d5e7ba1c75c249f0.setContent(html_5e2e0f78eaeafa9ef35edcf7554fe64e);
+        
+
+        marker_a60c257bffeedcb488560ee23919e17b.bindPopup(popup_cbc81879b5ba8ab8d5e7ba1c75c249f0)
+        ;
+
+        
+    
+    
+            var marker_b154e1912a963d673f96b0815155a57d = L.marker(
+                [40.807108, -73.918343],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_785a54a1b38e19063e3f9243ebc92437 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b154e1912a963d673f96b0815155a57d.setIcon(icon_785a54a1b38e19063e3f9243ebc92437);
+        
+    
+        var popup_9fc716e3002e335c2be515dccd0f4a7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0af330918048a7c1c133ecb83eb6271a = $(`<div id="html_0af330918048a7c1c133ecb83eb6271a" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-146060<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 530 EAST 138 STREET</div>`)[0];
+            popup_9fc716e3002e335c2be515dccd0f4a7c.setContent(html_0af330918048a7c1c133ecb83eb6271a);
+        
+
+        marker_b154e1912a963d673f96b0815155a57d.bindPopup(popup_9fc716e3002e335c2be515dccd0f4a7c)
+        ;
+
+        
+    
+    
+            var marker_dda4b3102128eb48ee1c08c4fbdd0116 = L.marker(
+                [40.81431, -73.930217],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_572265233783820c6b7eeff21549e8bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_dda4b3102128eb48ee1c08c4fbdd0116.setIcon(icon_572265233783820c6b7eeff21549e8bd);
+        
+    
+        var popup_a4e83dff59367dcf1e1fe45dc06650a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4cb67a8646c6faacf687218e29ac2ce = $(`<div id="html_d4cb67a8646c6faacf687218e29ac2ce" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-145842<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 261 WALTON AVENUE</div>`)[0];
+            popup_a4e83dff59367dcf1e1fe45dc06650a3.setContent(html_d4cb67a8646c6faacf687218e29ac2ce);
+        
+
+        marker_dda4b3102128eb48ee1c08c4fbdd0116.bindPopup(popup_a4e83dff59367dcf1e1fe45dc06650a3)
+        ;
+
+        
+    
+    
+            var marker_8df9016b964201a6c743b41886938305 = L.marker(
+                [40.818769, -73.91645],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_2a9836b4a78285bba51719047f038559 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8df9016b964201a6c743b41886938305.setIcon(icon_2a9836b4a78285bba51719047f038559);
+        
+    
+        var popup_7b5053797f7139f171a03a22134603ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba6d4e0abeca5d4e44b998912ac993f0 = $(`<div id="html_ba6d4e0abeca5d4e44b998912ac993f0" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-111740<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 652A MELROSE AVENUE</div>`)[0];
+            popup_7b5053797f7139f171a03a22134603ad.setContent(html_ba6d4e0abeca5d4e44b998912ac993f0);
+        
+
+        marker_8df9016b964201a6c743b41886938305.bindPopup(popup_7b5053797f7139f171a03a22134603ad)
+        ;
+
+        
+    
+    
+            var marker_9af4373e909d84c93b9ec0256d501d30 = L.marker(
+                [40.819709, -73.901295],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_3f5f3d3762d4326ec6d433ccf02a73e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9af4373e909d84c93b9ec0256d501d30.setIcon(icon_3f5f3d3762d4326ec6d433ccf02a73e2);
+        
+    
+        var popup_2f31e7feb647b3bbce952a53e95c1df2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab5a9a71b246b1aaab97fe5f4d6cc468 = $(`<div id="html_ab5a9a71b246b1aaab97fe5f4d6cc468" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-02-119034<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 840 WESTCHESTER AVENUE</div>`)[0];
+            popup_2f31e7feb647b3bbce952a53e95c1df2.setContent(html_ab5a9a71b246b1aaab97fe5f4d6cc468);
+        
+
+        marker_9af4373e909d84c93b9ec0256d501d30.bindPopup(popup_2f31e7feb647b3bbce952a53e95c1df2)
+        ;
+
+        
+    
+    
+            var marker_59707a228649f174cf980c760990c19e = L.marker(
+                [40.812127, -73.920552],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_6e79fcc5cad457d1d14e2c5d8ae6046c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_59707a228649f174cf980c760990c19e.setIcon(icon_6e79fcc5cad457d1d14e2c5d8ae6046c);
+        
+    
+        var popup_d149fc1d7bc863f0602f975c6a6160a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd162d3ff96b785094486b944b2d0302 = $(`<div id="html_cd162d3ff96b785094486b944b2d0302" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-146023<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 374 WILLIS AVENUE</div>`)[0];
+            popup_d149fc1d7bc863f0602f975c6a6160a5.setContent(html_cd162d3ff96b785094486b944b2d0302);
+        
+
+        marker_59707a228649f174cf980c760990c19e.bindPopup(popup_d149fc1d7bc863f0602f975c6a6160a5)
+        ;
+
+        
+    
+    
+            var marker_3ff416b6ff74cde56c407ea9a91f3091 = L.marker(
+                [40.81856, -73.9143],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_60bdecb0e2de52afe7513cf3b7cce622 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3ff416b6ff74cde56c407ea9a91f3091.setIcon(icon_60bdecb0e2de52afe7513cf3b7cce622);
+        
+    
+        var popup_da0060ef374647945ca4b3749e453055 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_961f81002c26121266bd94d3fcca6e07 = $(`<div id="html_961f81002c26121266bd94d3fcca6e07" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-123212<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 2976A 3 AVENUE</div>`)[0];
+            popup_da0060ef374647945ca4b3749e453055.setContent(html_961f81002c26121266bd94d3fcca6e07);
+        
+
+        marker_3ff416b6ff74cde56c407ea9a91f3091.bindPopup(popup_da0060ef374647945ca4b3749e453055)
+        ;
+
+        
+    
+    
+            var marker_3d8c4641556e65164f7d8560b893a3e5 = L.marker(
+                [40.817446, -73.915574],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_ac66b3686d6996ae4011f562f4c67bcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3d8c4641556e65164f7d8560b893a3e5.setIcon(icon_ac66b3686d6996ae4011f562f4c67bcc);
+        
+    
+        var popup_56b66afe6ed568e8b43dcc2c38de1b25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6765556d23654f430a4030cfce9c35cf = $(`<div id="html_6765556d23654f430a4030cfce9c35cf" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-118942<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 2922 3 AVENUE</div>`)[0];
+            popup_56b66afe6ed568e8b43dcc2c38de1b25.setContent(html_6765556d23654f430a4030cfce9c35cf);
+        
+
+        marker_3d8c4641556e65164f7d8560b893a3e5.bindPopup(popup_56b66afe6ed568e8b43dcc2c38de1b25)
+        ;
+
+        
+    
+    
+            var marker_6ab3b8ed1ab125c6e24d87e3cb29392f = L.marker(
+                [40.812079, -73.92659],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_90c88ab35e59ddb9fa531c87ca2af05a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6ab3b8ed1ab125c6e24d87e3cb29392f.setIcon(icon_90c88ab35e59ddb9fa531c87ca2af05a);
+        
+    
+        var popup_af0b1adced4bd073576fad4b40129954 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6cd01318ab5100fb5c075b13c2198fc = $(`<div id="html_e6cd01318ab5100fb5c075b13c2198fc" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-146049<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 289 MORRIS AVENUE</div>`)[0];
+            popup_af0b1adced4bd073576fad4b40129954.setContent(html_e6cd01318ab5100fb5c075b13c2198fc);
+        
+
+        marker_6ab3b8ed1ab125c6e24d87e3cb29392f.bindPopup(popup_af0b1adced4bd073576fad4b40129954)
+        ;
+
+        
+    
+    
+            var marker_2fd9841edabea6b3ea22efef7fb7467c = L.marker(
+                [40.82668, -73.887763],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_0ae74ddd050e6058e41632abc07740c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2fd9841edabea6b3ea22efef7fb7467c.setIcon(icon_0ae74ddd050e6058e41632abc07740c4);
+        
+    
+        var popup_315f7471009746185cad2d5c064c6aa3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b7eef80d63f7593f01036b20cb809d0 = $(`<div id="html_3b7eef80d63f7593f01036b20cb809d0" style="width: 100.0%; height: 100.0%;"><strong>District 2: Morrisania, Longwood, Hunts Point</strong><br><strong>Site ID:</strong> bx-02-100042<br><strong>Type:</strong> Link5G_Ad<br><strong>Status:</strong> Live<br><strong>Address:</strong> 1102 LONGFELLOW AVENUE</div>`)[0];
+            popup_315f7471009746185cad2d5c064c6aa3.setContent(html_3b7eef80d63f7593f01036b20cb809d0);
+        
+
+        marker_2fd9841edabea6b3ea22efef7fb7467c.bindPopup(popup_315f7471009746185cad2d5c064c6aa3)
+        ;
+
+        
+    
+    
+            var marker_6b9cf80628e66a832c73291311c17757 = L.marker(
+                [40.821338, -73.896767],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_9ea812a7ccf7355409b13772d5b0c312 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6b9cf80628e66a832c73291311c17757.setIcon(icon_9ea812a7ccf7355409b13772d5b0c312);
+        
+    
+        var popup_0b79c8d9e5ffba9946258eddef41e6e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9fe0da67dc46567c506b8291145335c = $(`<div id="html_a9fe0da67dc46567c506b8291145335c" style="width: 100.0%; height: 100.0%;"><strong>District 2: Morrisania, Longwood, Hunts Point</strong><br><strong>Site ID:</strong> bx-02-159084<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 944A INTERVALE AVENUE</div>`)[0];
+            popup_0b79c8d9e5ffba9946258eddef41e6e4.setContent(html_a9fe0da67dc46567c506b8291145335c);
+        
+
+        marker_6b9cf80628e66a832c73291311c17757.bindPopup(popup_0b79c8d9e5ffba9946258eddef41e6e4)
+        ;
+
+        
+    
+    
+            var marker_fd4f8208c2411cd68473c016417daa31 = L.marker(
+                [40.81886, -73.914242],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_a7ca18e7e16a872d2bdd77026cc6ac54 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fd4f8208c2411cd68473c016417daa31.setIcon(icon_a7ca18e7e16a872d2bdd77026cc6ac54);
+        
+    
+        var popup_15682897efb5ef4b7e21b2e619a93e2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_480c1e40216cc17e2e21e6625a4d48a7 = $(`<div id="html_480c1e40216cc17e2e21e6625a4d48a7" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-123217<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 2991 3 AVENUE</div>`)[0];
+            popup_15682897efb5ef4b7e21b2e619a93e2c.setContent(html_480c1e40216cc17e2e21e6625a4d48a7);
+        
+
+        marker_fd4f8208c2411cd68473c016417daa31.bindPopup(popup_15682897efb5ef4b7e21b2e619a93e2c)
+        ;
+
+        
+    
+    
+            var marker_85019487ff39c3deba9fb1bbb4da1a5d = L.marker(
+                [40.824938, -73.891636],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_19f0843e1946e506d32972e19ca5e90d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_85019487ff39c3deba9fb1bbb4da1a5d.setIcon(icon_19f0843e1946e506d32972e19ca5e90d);
+        
+    
+        var popup_ff23710beff8992905174895e0a8d4ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf2434b753772127a024b7355c29e686 = $(`<div id="html_bf2434b753772127a024b7355c29e686" style="width: 100.0%; height: 100.0%;"><strong>District 2: Morrisania, Longwood, Hunts Point</strong><br><strong>Site ID:</strong> bx-02-123197<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 1041 WEST FARMS ROAD</div>`)[0];
+            popup_ff23710beff8992905174895e0a8d4ba.setContent(html_bf2434b753772127a024b7355c29e686);
+        
+
+        marker_85019487ff39c3deba9fb1bbb4da1a5d.bindPopup(popup_ff23710beff8992905174895e0a8d4ba)
+        ;
+
+        
+    
+    
+            var marker_c005e0c3a2575cdb0d96d8776620ba8a = L.marker(
+                [40.814394, -73.915181],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_303116e15de87dbfe33c20481a009225 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c005e0c3a2575cdb0d96d8776620ba8a.setIcon(icon_303116e15de87dbfe33c20481a009225);
+        
+    
+        var popup_ebe7aeb955ae463cc25072ece8b3cfac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9922f60ebf756a083896626d7f6b821 = $(`<div id="html_a9922f60ebf756a083896626d7f6b821" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-146056<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 520 BROOK AVENUE</div>`)[0];
+            popup_ebe7aeb955ae463cc25072ece8b3cfac.setContent(html_a9922f60ebf756a083896626d7f6b821);
+        
+
+        marker_c005e0c3a2575cdb0d96d8776620ba8a.bindPopup(popup_ebe7aeb955ae463cc25072ece8b3cfac)
+        ;
+
+        
+    
+    
+            var marker_2d638b4c99e8312d534369d795957380 = L.marker(
+                [40.810159, -73.927886],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_b6eb5da60f0671bb7b1c4cb13377ea31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2d638b4c99e8312d534369d795957380.setIcon(icon_b6eb5da60f0671bb7b1c4cb13377ea31);
+        
+    
+        var popup_cff9bcbda8bab15155b3f5cbdc68601b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06c3d999df043b65af7950607069b7c8 = $(`<div id="html_06c3d999df043b65af7950607069b7c8" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-145916<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 197 LINCOLN AVENUE</div>`)[0];
+            popup_cff9bcbda8bab15155b3f5cbdc68601b.setContent(html_06c3d999df043b65af7950607069b7c8);
+        
+
+        marker_2d638b4c99e8312d534369d795957380.bindPopup(popup_cff9bcbda8bab15155b3f5cbdc68601b)
+        ;
+
+        
+    
+    
+            var marker_0766b31f355a0038e220d8f5e750f3e3 = L.marker(
+                [40.812943, -73.904111],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_89caa4d02542ecad131887c7fbfd5aa3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0766b31f355a0038e220d8f5e750f3e3.setIcon(icon_89caa4d02542ecad131887c7fbfd5aa3);
+        
+    
+        var popup_68dc2a6a6cf9e4d5578593a83cf69ff8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43f45fe20b380f805d74785e1fda94b1 = $(`<div id="html_43f45fe20b380f805d74785e1fda94b1" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-02-160005<br><strong>Type:</strong> Link5G_NonAd<br><strong>Status:</strong> Live<br><strong>Address:</strong> 576 PROSPECT AVENUE</div>`)[0];
+            popup_68dc2a6a6cf9e4d5578593a83cf69ff8.setContent(html_43f45fe20b380f805d74785e1fda94b1);
+        
+
+        marker_0766b31f355a0038e220d8f5e750f3e3.bindPopup(popup_68dc2a6a6cf9e4d5578593a83cf69ff8)
+        ;
+
+        
+    
+    
+            var marker_e0030a7a4f34d6897c1ea771ed933f6b = L.marker(
+                [40.813575, -73.919491],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_43d78c953823e51c654590ec03c280e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e0030a7a4f34d6897c1ea771ed933f6b.setIcon(icon_43d78c953823e51c654590ec03c280e0);
+        
+    
+        var popup_4846000d2c4e224598d2505a0328001b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06602f96c0177f8d103baada47b96716 = $(`<div id="html_06602f96c0177f8d103baada47b96716" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-144892<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 442 WILLIS AVENUE</div>`)[0];
+            popup_4846000d2c4e224598d2505a0328001b.setContent(html_06602f96c0177f8d103baada47b96716);
+        
+
+        marker_e0030a7a4f34d6897c1ea771ed933f6b.bindPopup(popup_4846000d2c4e224598d2505a0328001b)
+        ;
+
+        
+    
+    
+            var marker_3e14703ed4f97c300c7ce0ab313d34b9 = L.marker(
+                [40.822338, -73.909427],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_7ee332e71e1f6b50ae7f89290715b455 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3e14703ed4f97c300c7ce0ab313d34b9.setIcon(icon_7ee332e71e1f6b50ae7f89290715b455);
+        
+    
+        var popup_8de6cb35a8395ce8a78441f477e82ca6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c2daf373430b27f2bf8c3db95e85eac = $(`<div id="html_2c2daf373430b27f2bf8c3db95e85eac" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-146065<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 844 ST. ANN'S AVENUE</div>`)[0];
+            popup_8de6cb35a8395ce8a78441f477e82ca6.setContent(html_2c2daf373430b27f2bf8c3db95e85eac);
+        
+
+        marker_3e14703ed4f97c300c7ce0ab313d34b9.bindPopup(popup_8de6cb35a8395ce8a78441f477e82ca6)
+        ;
+
+        
+    
+    
+            var marker_763fc82c3ffdfde4d55ef44815e97d81 = L.marker(
+                [40.812163, -73.916467],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_73b632dea3b264c451b1b5cc929a2ca0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_763fc82c3ffdfde4d55ef44815e97d81.setIcon(icon_73b632dea3b264c451b1b5cc929a2ca0);
+        
+    
+        var popup_a33174fe2a386669e2687bfaba245fbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b595125310f48733211d0afb892d043 = $(`<div id="html_1b595125310f48733211d0afb892d043" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-131467<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 436 BROOK AVENUE</div>`)[0];
+            popup_a33174fe2a386669e2687bfaba245fbb.setContent(html_1b595125310f48733211d0afb892d043);
+        
+
+        marker_763fc82c3ffdfde4d55ef44815e97d81.bindPopup(popup_a33174fe2a386669e2687bfaba245fbb)
+        ;
+
+        
+    
+    
+            var marker_682425380814e213e46bbffcab18bd1e = L.marker(
+                [40.820102, -73.912838],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_adbd7dce9a7d8fd133ae03ad1af064c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_682425380814e213e46bbffcab18bd1e.setIcon(icon_adbd7dce9a7d8fd133ae03ad1af064c1);
+        
+    
+        var popup_6c12bf848b331a7bcda0a78888b09403 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a59404dc1e6d0e690ae0cad3e9da54d = $(`<div id="html_6a59404dc1e6d0e690ae0cad3e9da54d" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-118947<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 487 EAST 156 STREET</div>`)[0];
+            popup_6c12bf848b331a7bcda0a78888b09403.setContent(html_6a59404dc1e6d0e690ae0cad3e9da54d);
+        
+
+        marker_682425380814e213e46bbffcab18bd1e.bindPopup(popup_6c12bf848b331a7bcda0a78888b09403)
+        ;
+
+        
+    
+    
+            var marker_b5981cda03d333e81205b8eb336e2bb9 = L.marker(
+                [40.815039, -73.929885],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_df2b4c792549d6024c64f548646e2aa5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b5981cda03d333e81205b8eb336e2bb9.setIcon(icon_df2b4c792549d6024c64f548646e2aa5);
+        
+    
+        var popup_c12797eb89e127635dda94dafa82cc8f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53c99ff2b6c08a0e42f22bcc923a5ee3 = $(`<div id="html_53c99ff2b6c08a0e42f22bcc923a5ee3" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-145841<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 301 WALTON AVENUE</div>`)[0];
+            popup_c12797eb89e127635dda94dafa82cc8f.setContent(html_53c99ff2b6c08a0e42f22bcc923a5ee3);
+        
+
+        marker_b5981cda03d333e81205b8eb336e2bb9.bindPopup(popup_c12797eb89e127635dda94dafa82cc8f)
+        ;
+
+        
+    
+    
+            var marker_9d945f56af5cdb44d32f28664eb7f6b2 = L.marker(
+                [40.813128, -73.908991],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_b9eaa7c4e7e2e3b7a49fa23284b7e08f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9d945f56af5cdb44d32f28664eb7f6b2.setIcon(icon_b9eaa7c4e7e2e3b7a49fa23284b7e08f);
+        
+    
+        var popup_0884a98eb5cd3fbcd533bcc429c5194a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c37c1d0b5ab5b118b904ad89ff2a97a = $(`<div id="html_4c37c1d0b5ab5b118b904ad89ff2a97a" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-119027<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 718 EAST 149 STREET</div>`)[0];
+            popup_0884a98eb5cd3fbcd533bcc429c5194a.setContent(html_4c37c1d0b5ab5b118b904ad89ff2a97a);
+        
+
+        marker_9d945f56af5cdb44d32f28664eb7f6b2.bindPopup(popup_0884a98eb5cd3fbcd533bcc429c5194a)
+        ;
+
+        
+    
+    
+            var marker_9277ed2ae6f6b465e5a37d4c491d7c28 = L.marker(
+                [40.806287, -73.917955],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_c6cc8817375cf73ce121f947fc21558a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9277ed2ae6f6b465e5a37d4c491d7c28.setIcon(icon_c6cc8817375cf73ce121f947fc21558a);
+        
+    
+        var popup_6e2b7c3f6ce71661e2535afb74d3a4ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d977b6341a83a5810ad0ca3089a4324e = $(`<div id="html_d977b6341a83a5810ad0ca3089a4324e" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-146053<br><strong>Type:</strong> LINK1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 211 ST. ANN'S AVENUE</div>`)[0];
+            popup_6e2b7c3f6ce71661e2535afb74d3a4ff.setContent(html_d977b6341a83a5810ad0ca3089a4324e);
+        
+
+        marker_9277ed2ae6f6b465e5a37d4c491d7c28.bindPopup(popup_6e2b7c3f6ce71661e2535afb74d3a4ff)
+        ;
+
+        
+    
+    
+            var marker_0205fd43d0e23781c90f7826ad0bebfb = L.marker(
+                [40.809668, -73.922623],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_29c479c18990058496909dd935c4a648 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0205fd43d0e23781c90f7826ad0bebfb.setIcon(icon_29c479c18990058496909dd935c4a648);
+        
+    
+        var popup_99655a29fdb80c0b927d19c896bd5210 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e68c3f3ee44fd190d07ded2332cc26d = $(`<div id="html_2e68c3f3ee44fd190d07ded2332cc26d" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-146024<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 249 WILLIS AVENUE</div>`)[0];
+            popup_99655a29fdb80c0b927d19c896bd5210.setContent(html_2e68c3f3ee44fd190d07ded2332cc26d);
+        
+
+        marker_0205fd43d0e23781c90f7826ad0bebfb.bindPopup(popup_99655a29fdb80c0b927d19c896bd5210)
+        ;
+
+        
+    
+    
+            var marker_185407bb596da0a617a36a2c9c83589c = L.marker(
+                [40.826449, -73.898554],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_52d5c1b98fd28f18928346c1d7da7773 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_185407bb596da0a617a36a2c9c83589c.setIcon(icon_52d5c1b98fd28f18928346c1d7da7773);
+        
+    
+        var popup_1b29072216bb6ad8efcbfffb54045759 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4dccf650cadbcee5e5e41ec9e35cf8b5 = $(`<div id="html_4dccf650cadbcee5e5e41ec9e35cf8b5" style="width: 100.0%; height: 100.0%;"><strong>District 2: Morrisania, Longwood, Hunts Point</strong><br><strong>Site ID:</strong> bx-02-155911<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 1190 PROSPECT AVENUE</div>`)[0];
+            popup_1b29072216bb6ad8efcbfffb54045759.setContent(html_4dccf650cadbcee5e5e41ec9e35cf8b5);
+        
+
+        marker_185407bb596da0a617a36a2c9c83589c.bindPopup(popup_1b29072216bb6ad8efcbfffb54045759)
+        ;
+
+        
+    
+    
+            var marker_76d0dc36fcb491c7d0bca3a11923477b = L.marker(
+                [40.821838, -73.897648],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_84618e9e17f802d56c1b00f011042de8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_76d0dc36fcb491c7d0bca3a11923477b.setIcon(icon_84618e9e17f802d56c1b00f011042de8);
+        
+    
+        var popup_d14e29cf47e518d88da6e5363235ec57 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c01515bb88cab0e6628c758513e9bcc = $(`<div id="html_3c01515bb88cab0e6628c758513e9bcc" style="width: 100.0%; height: 100.0%;"><strong>District 2: Morrisania, Longwood, Hunts Point</strong><br><strong>Site ID:</strong> bx-02-145554<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 931 WESTCHESTER AVENUE</div>`)[0];
+            popup_d14e29cf47e518d88da6e5363235ec57.setContent(html_3c01515bb88cab0e6628c758513e9bcc);
+        
+
+        marker_76d0dc36fcb491c7d0bca3a11923477b.bindPopup(popup_d14e29cf47e518d88da6e5363235ec57)
+        ;
+
+        
+    
+    
+            var marker_f34bd006c270c43602d517a9e02cc181 = L.marker(
+                [40.819488, -73.913668],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_478be18560233bce303bd22e418c5262 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f34bd006c270c43602d517a9e02cc181.setIcon(icon_478be18560233bce303bd22e418c5262);
+        
+    
+        var popup_074c68b2c7aa4ba2ce8872e81775c41e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a093bceaa9caee5f1fbd19457a30dd26 = $(`<div id="html_a093bceaa9caee5f1fbd19457a30dd26" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-123216<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 3015 3 AVENUE</div>`)[0];
+            popup_074c68b2c7aa4ba2ce8872e81775c41e.setContent(html_a093bceaa9caee5f1fbd19457a30dd26);
+        
+
+        marker_f34bd006c270c43602d517a9e02cc181.bindPopup(popup_074c68b2c7aa4ba2ce8872e81775c41e)
+        ;
+
+        
+    
+    
+            var marker_b18d0096c946df4192f10b0db2b5ff47 = L.marker(
+                [40.817926, -73.915262],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_0beef2728915ae296fd18c93c38d716a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b18d0096c946df4192f10b0db2b5ff47.setIcon(icon_0beef2728915ae296fd18c93c38d716a);
+        
+    
+        var popup_57a69c3cce92499999a75b1bee6c5c8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_207be5b262349ff5d22d214237cafe9b = $(`<div id="html_207be5b262349ff5d22d214237cafe9b" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-109413<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 2939 3 AVENUE</div>`)[0];
+            popup_57a69c3cce92499999a75b1bee6c5c8c.setContent(html_207be5b262349ff5d22d214237cafe9b);
+        
+
+        marker_b18d0096c946df4192f10b0db2b5ff47.bindPopup(popup_57a69c3cce92499999a75b1bee6c5c8c)
+        ;
+
+        
+    
+    
+            var marker_ebb517b04fafad0eff2ce6ff6cabc9ec = L.marker(
+                [40.82089, -73.894041],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_7784e686a46ef61072f4d9fdc8037d06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ebb517b04fafad0eff2ce6ff6cabc9ec.setIcon(icon_7784e686a46ef61072f4d9fdc8037d06);
+        
+    
+        var popup_ba093b345d74051329c24fb3a67eb1fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc60e11cc5dd6aaf1a4dfd9c1de2947d = $(`<div id="html_cc60e11cc5dd6aaf1a4dfd9c1de2947d" style="width: 100.0%; height: 100.0%;"><strong>District 2: Morrisania, Longwood, Hunts Point</strong><br><strong>Site ID:</strong> bx-02-108937<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 994 EAST 163 STREET</div>`)[0];
+            popup_ba093b345d74051329c24fb3a67eb1fa.setContent(html_cc60e11cc5dd6aaf1a4dfd9c1de2947d);
+        
+
+        marker_ebb517b04fafad0eff2ce6ff6cabc9ec.bindPopup(popup_ba093b345d74051329c24fb3a67eb1fa)
+        ;
+
+        
+    
+    
+            var marker_94e9c4eb1a05dc99407557aee7a631cd = L.marker(
+                [40.807756, -73.919006],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_bf08b1cfca6185eace6469bb6178e736 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_94e9c4eb1a05dc99407557aee7a631cd.setIcon(icon_bf08b1cfca6185eace6469bb6178e736);
+        
+    
+        var popup_3df9649452af7ebb3e0c8beabd51743a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9615e223eddf4096459fc078242b3075 = $(`<div id="html_9615e223eddf4096459fc078242b3075" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-146075<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 250 BROOK AVENUE</div>`)[0];
+            popup_3df9649452af7ebb3e0c8beabd51743a.setContent(html_9615e223eddf4096459fc078242b3075);
+        
+
+        marker_94e9c4eb1a05dc99407557aee7a631cd.bindPopup(popup_3df9649452af7ebb3e0c8beabd51743a)
+        ;
+
+        
+    
+    
+            var marker_750202b3c035a90c09479c4d9dc5162a = L.marker(
+                [40.812112, -73.903863],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_f8dea5e82b9c359dca713f7bac25bf6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_750202b3c035a90c09479c4d9dc5162a.setIcon(icon_f8dea5e82b9c359dca713f7bac25bf6c);
+        
+    
+        var popup_3276e175e072143903f0ca2d23bfc190 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e32c12e37163b0bca5ab9a75234578cf = $(`<div id="html_e32c12e37163b0bca5ab9a75234578cf" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-02-157674<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 540 SOUTHERN BOULEVARD</div>`)[0];
+            popup_3276e175e072143903f0ca2d23bfc190.setContent(html_e32c12e37163b0bca5ab9a75234578cf);
+        
+
+        marker_750202b3c035a90c09479c4d9dc5162a.bindPopup(popup_3276e175e072143903f0ca2d23bfc190)
+        ;
+
+        
+    
+    
+            var marker_241ff00f19c8035eb141ef747f2ff67d = L.marker(
+                [40.815998, -73.908242],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_3aca372eba999dda2eaa92e062e2c930 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_241ff00f19c8035eb141ef747f2ff67d.setIcon(icon_3aca372eba999dda2eaa92e062e2c930);
+        
+    
+        var popup_8e647173588b94025d15059f4a19e4de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14b6d762c92096026c52af5565117e2c = $(`<div id="html_14b6d762c92096026c52af5565117e2c" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-123210<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 660 WESTCHESTER AVENUE</div>`)[0];
+            popup_8e647173588b94025d15059f4a19e4de.setContent(html_14b6d762c92096026c52af5565117e2c);
+        
+
+        marker_241ff00f19c8035eb141ef747f2ff67d.bindPopup(popup_8e647173588b94025d15059f4a19e4de)
+        ;
+
+        
+    
+    
+            var marker_14c451647f54a26b80ad779626cb2792 = L.marker(
+                [40.807378, -73.917],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_f919eb886a786f6225b63402f1532026 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_14c451647f54a26b80ad779626cb2792.setIcon(icon_f919eb886a786f6225b63402f1532026);
+        
+    
+        var popup_16619d0ea0601a3990542b34b46b543b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2271c814be63064dc016bbcdf7d5eac = $(`<div id="html_b2271c814be63064dc016bbcdf7d5eac" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-117230<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 256 ST. ANN'S AVENUE</div>`)[0];
+            popup_16619d0ea0601a3990542b34b46b543b.setContent(html_b2271c814be63064dc016bbcdf7d5eac);
+        
+
+        marker_14c451647f54a26b80ad779626cb2792.bindPopup(popup_16619d0ea0601a3990542b34b46b543b)
+        ;
+
+        
+    
+    
+            var marker_a77d18432a3280ece7b39256b5c2347b = L.marker(
+                [40.813595, -73.9304],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_ab0f9bb5d9e1f95a3f3326e9024e477c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a77d18432a3280ece7b39256b5c2347b.setIcon(icon_ab0f9bb5d9e1f95a3f3326e9024e477c);
+        
+    
+        var popup_c3351f312aad34e1dbbb1f9df29e4e46 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f85c67cd5c4dbfb8cfb3d99515823a7 = $(`<div id="html_1f85c67cd5c4dbfb8cfb3d99515823a7" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-145821<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 250 WALTON AVENUE</div>`)[0];
+            popup_c3351f312aad34e1dbbb1f9df29e4e46.setContent(html_1f85c67cd5c4dbfb8cfb3d99515823a7);
+        
+
+        marker_a77d18432a3280ece7b39256b5c2347b.bindPopup(popup_c3351f312aad34e1dbbb1f9df29e4e46)
+        ;
+
+        
+    
+    
+            var marker_e33a8a9238285d74f247f4897ca0662d = L.marker(
+                [40.817141, -73.916208],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_85a019f03a233efccac2445084cbd5aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e33a8a9238285d74f247f4897ca0662d.setIcon(icon_85a019f03a233efccac2445084cbd5aa);
+        
+    
+        var popup_cf709a46d93219b419122907d75083f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a470b48950b2356acf2c8e5f77ebf51 = $(`<div id="html_5a470b48950b2356acf2c8e5f77ebf51" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-118955<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 2901 3 AVENUE</div>`)[0];
+            popup_cf709a46d93219b419122907d75083f3.setContent(html_5a470b48950b2356acf2c8e5f77ebf51);
+        
+
+        marker_e33a8a9238285d74f247f4897ca0662d.bindPopup(popup_cf709a46d93219b419122907d75083f3)
+        ;
+
+        
+    
+    
+            var marker_32bd27854d83b41e28d96091b8e4a9c6 = L.marker(
+                [40.818676, -73.928165],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_ab65f010763292f481acf766f9071550 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_32bd27854d83b41e28d96091b8e4a9c6.setIcon(icon_ab65f010763292f481acf766f9071550);
+        
+    
+        var popup_1451ec24e64b0fe92dce078a7abda219 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3a50f1474265f5af0d08694bf8fd7ca = $(`<div id="html_d3a50f1474265f5af0d08694bf8fd7ca" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-119075<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 134 EAST 149 STREET</div>`)[0];
+            popup_1451ec24e64b0fe92dce078a7abda219.setContent(html_d3a50f1474265f5af0d08694bf8fd7ca);
+        
+
+        marker_32bd27854d83b41e28d96091b8e4a9c6.bindPopup(popup_1451ec24e64b0fe92dce078a7abda219)
+        ;
+
+        
+    
+    
+            var marker_a2d6e3dd950e9415764e161110cee27d = L.marker(
+                [40.812253, -73.928665],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_3e6159276ad7613f1442678778bd8c3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a2d6e3dd950e9415764e161110cee27d.setIcon(icon_3e6159276ad7613f1442678778bd8c3f);
+        
+    
+        var popup_72d8dbcf5b996160c57725cb6d51a97e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fdabe3c29ad75c7a7649f9afaf00633c = $(`<div id="html_fdabe3c29ad75c7a7649f9afaf00633c" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-145854<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 217 EAST 138 STREET</div>`)[0];
+            popup_72d8dbcf5b996160c57725cb6d51a97e.setContent(html_fdabe3c29ad75c7a7649f9afaf00633c);
+        
+
+        marker_a2d6e3dd950e9415764e161110cee27d.bindPopup(popup_72d8dbcf5b996160c57725cb6d51a97e)
+        ;
+
+        
+    
+    
+            var marker_2fcef6bee325c6d2bfaf82a608368d43 = L.marker(
+                [40.812841, -73.916074],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_b9dfc89548563eb89447b6293810bb4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2fcef6bee325c6d2bfaf82a608368d43.setIcon(icon_b9dfc89548563eb89447b6293810bb4b);
+        
+    
+        var popup_fcad6ac6568c2350464b52622b7dc298 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_900c7b1b4c83a19b9d8502d371052f95 = $(`<div id="html_900c7b1b4c83a19b9d8502d371052f95" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-146055<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 468 BROOK AVENUE</div>`)[0];
+            popup_fcad6ac6568c2350464b52622b7dc298.setContent(html_900c7b1b4c83a19b9d8502d371052f95);
+        
+
+        marker_2fcef6bee325c6d2bfaf82a608368d43.bindPopup(popup_fcad6ac6568c2350464b52622b7dc298)
+        ;
+
+        
+    
+    
+            var marker_2fc722d7690c3b5a52fceedfec7ad019 = L.marker(
+                [40.813367, -73.919625],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_11a78f1c231736ea1b43e2aecb65a70d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2fc722d7690c3b5a52fceedfec7ad019.setIcon(icon_11a78f1c231736ea1b43e2aecb65a70d);
+        
+    
+        var popup_9645b8a1bffa134eb77bdae8bbc024a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a4d26e3cee333c21b809c96508536db = $(`<div id="html_7a4d26e3cee333c21b809c96508536db" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-138788<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 426 WILLIS AVENUE</div>`)[0];
+            popup_9645b8a1bffa134eb77bdae8bbc024a4.setContent(html_7a4d26e3cee333c21b809c96508536db);
+        
+
+        marker_2fc722d7690c3b5a52fceedfec7ad019.bindPopup(popup_9645b8a1bffa134eb77bdae8bbc024a4)
+        ;
+
+        
+    
+    
+            var marker_8f8c595f76a730b472a51d1f74c6f67b = L.marker(
+                [40.818886, -73.929213],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_64186a3632c8c8b319c8f6df2e4f690f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8f8c595f76a730b472a51d1f74c6f67b.setIcon(icon_64186a3632c8c8b319c8f6df2e4f690f);
+        
+    
+        var popup_e2d11cdc4fe850f2c5d680e702c5c1ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91c76a728834c6b9d75f8feb77b77b4d = $(`<div id="html_91c76a728834c6b9d75f8feb77b77b4d" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-145688<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 518 GERARD AVENUE</div>`)[0];
+            popup_e2d11cdc4fe850f2c5d680e702c5c1ad.setContent(html_91c76a728834c6b9d75f8feb77b77b4d);
+        
+
+        marker_8f8c595f76a730b472a51d1f74c6f67b.bindPopup(popup_e2d11cdc4fe850f2c5d680e702c5c1ad)
+        ;
+
+        
+    
+    
+            var marker_d139efba1f9c505d38463b8ad8d1aa0f = L.marker(
+                [40.820806, -73.898984],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_e12dab8c9e65752af0b5a5d3d95f449f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d139efba1f9c505d38463b8ad8d1aa0f.setIcon(icon_e12dab8c9e65752af0b5a5d3d95f449f);
+        
+    
+        var popup_6a72aff0f157787e3b86f63589f5aa7a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c12fed8716a55933c67dc20ac105083 = $(`<div id="html_5c12fed8716a55933c67dc20ac105083" style="width: 100.0%; height: 100.0%;"><strong>District 2: Morrisania, Longwood, Hunts Point</strong><br><strong>Site ID:</strong> bx-02-152007<br><strong>Type:</strong> Link5G_Ad<br><strong>Status:</strong> Live<br><strong>Address:</strong> 888 Westchester Avenue</div>`)[0];
+            popup_6a72aff0f157787e3b86f63589f5aa7a.setContent(html_5c12fed8716a55933c67dc20ac105083);
+        
+
+        marker_d139efba1f9c505d38463b8ad8d1aa0f.bindPopup(popup_6a72aff0f157787e3b86f63589f5aa7a)
+        ;
+
+        
+    
+    
+            var marker_c8dfe8e1a04a7aceca80ebf7bd963ca2 = L.marker(
+                [40.810255, -73.921923],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_e6862b9a0a760e35db14d553812671be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c8dfe8e1a04a7aceca80ebf7bd963ca2.setIcon(icon_e6862b9a0a760e35db14d553812671be);
+        
+    
+        var popup_8aa4c8f1a2da755a7fb106ccf40c0d61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_daed8c3c6ecb554248c01028c60a2b47 = $(`<div id="html_daed8c3c6ecb554248c01028c60a2b47" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-146083<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 296 WILLIS AVENUE</div>`)[0];
+            popup_8aa4c8f1a2da755a7fb106ccf40c0d61.setContent(html_daed8c3c6ecb554248c01028c60a2b47);
+        
+
+        marker_c8dfe8e1a04a7aceca80ebf7bd963ca2.bindPopup(popup_8aa4c8f1a2da755a7fb106ccf40c0d61)
+        ;
+
+        
+    
+    
+            var marker_c0a960524c9b30b5d822bf1601b670c8 = L.marker(
+                [40.822112, -73.914849],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_b35447d5fee6f1da4549f28f67107da5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c0a960524c9b30b5d822bf1601b670c8.setIcon(icon_b35447d5fee6f1da4549f28f67107da5);
+        
+    
+        var popup_f8ca803bf966524a7b14c19d99a3dee4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_021db727a18ff409d74205d29b189e61 = $(`<div id="html_021db727a18ff409d74205d29b189e61" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-146063<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 776 MELROSE AVENUE</div>`)[0];
+            popup_f8ca803bf966524a7b14c19d99a3dee4.setContent(html_021db727a18ff409d74205d29b189e61);
+        
+
+        marker_c0a960524c9b30b5d822bf1601b670c8.bindPopup(popup_f8ca803bf966524a7b14c19d99a3dee4)
+        ;
+
+        
+    
+    
+            var marker_b9d7476f8de22f899078411985952447 = L.marker(
+                [40.823219, -73.891694],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_b7c57cedfcc217dce881f4ca2443e67e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b9d7476f8de22f899078411985952447.setIcon(icon_b7c57cedfcc217dce881f4ca2443e67e);
+        
+    
+        var popup_f72aaf57e7e6979d06ddfb15e69eff6e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35da8c0e43507052c17db60607dcd7d3 = $(`<div id="html_35da8c0e43507052c17db60607dcd7d3" style="width: 100.0%; height: 100.0%;"><strong>District 2: Morrisania, Longwood, Hunts Point</strong><br><strong>Site ID:</strong> bx-02-123176<br><strong>Type:</strong> Link5G_Ad<br><strong>Status:</strong> Live<br><strong>Address:</strong> 945 ALDUS STREET</div>`)[0];
+            popup_f72aaf57e7e6979d06ddfb15e69eff6e.setContent(html_35da8c0e43507052c17db60607dcd7d3);
+        
+
+        marker_b9d7476f8de22f899078411985952447.bindPopup(popup_f72aaf57e7e6979d06ddfb15e69eff6e)
+        ;
+
+        
+    
+    
+            var marker_29064cce4e57034b019d31f439664912 = L.marker(
+                [40.819568, -73.913388],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_39a95ffe25f41316b89b07d346def5e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_29064cce4e57034b019d31f439664912.setIcon(icon_39a95ffe25f41316b89b07d346def5e9);
+        
+    
+        var popup_07fc17945462d44474507291d1af5267 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96c4d7fe92c2009fa4055e8d03937fea = $(`<div id="html_96c4d7fe92c2009fa4055e8d03937fea" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-123215<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 3012 3 AVENUE</div>`)[0];
+            popup_07fc17945462d44474507291d1af5267.setContent(html_96c4d7fe92c2009fa4055e8d03937fea);
+        
+
+        marker_29064cce4e57034b019d31f439664912.bindPopup(popup_07fc17945462d44474507291d1af5267)
+        ;
+
+        
+    
+    
+            var marker_9a93b4c4412c9f4c799b3fceb55fd14f = L.marker(
+                [40.816751, -73.922955],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_48e00aaac576fec89c950ffdff6d3f4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9a93b4c4412c9f4c799b3fceb55fd14f.setIcon(icon_48e00aaac576fec89c950ffdff6d3f4d);
+        
+    
+        var popup_e91c3c1c95be2b381eba9a697fec0306 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69de13057bb63436f6b69f509b7eabab = $(`<div id="html_69de13057bb63436f6b69f509b7eabab" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-116415<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 522 MORRIS AVENUE</div>`)[0];
+            popup_e91c3c1c95be2b381eba9a697fec0306.setContent(html_69de13057bb63436f6b69f509b7eabab);
+        
+
+        marker_9a93b4c4412c9f4c799b3fceb55fd14f.bindPopup(popup_e91c3c1c95be2b381eba9a697fec0306)
+        ;
+
+        
+    
+    
+            var marker_82c2510c9dfbfa2f1e851b678d9dc2e5 = L.marker(
+                [40.806385, -73.916245],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_bf671795e5b4d3d21a6c2f2439208703 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_82c2510c9dfbfa2f1e851b678d9dc2e5.setIcon(icon_bf671795e5b4d3d21a6c2f2439208703);
+        
+    
+        var popup_23130cd9a7d9580c83c93ca0a997f234 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69c79c133c64f13a3e3144b3a2ff613c = $(`<div id="html_69c79c133c64f13a3e3144b3a2ff613c" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-146054<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 601 EAST 138 STREET</div>`)[0];
+            popup_23130cd9a7d9580c83c93ca0a997f234.setContent(html_69c79c133c64f13a3e3144b3a2ff613c);
+        
+
+        marker_82c2510c9dfbfa2f1e851b678d9dc2e5.bindPopup(popup_23130cd9a7d9580c83c93ca0a997f234)
+        ;
+
+        
+    
+    
+            var marker_07aa3b439692465c4365a09963cd504c = L.marker(
+                [40.820902, -73.896055],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_ea985d99dc0868543dbbe3f58882d6e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_07aa3b439692465c4365a09963cd504c.setIcon(icon_ea985d99dc0868543dbbe3f58882d6e8);
+        
+    
+        var popup_2c1d6e724b9ab9dc45c4449ac3e2681f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af75380dfef8d110a4a97541afb73b94 = $(`<div id="html_af75380dfef8d110a4a97541afb73b94" style="width: 100.0%; height: 100.0%;"><strong>District 2: Morrisania, Longwood, Hunts Point</strong><br><strong>Site ID:</strong> bx-02-111492<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 948 EAST 163 STREET</div>`)[0];
+            popup_2c1d6e724b9ab9dc45c4449ac3e2681f.setContent(html_af75380dfef8d110a4a97541afb73b94);
+        
+
+        marker_07aa3b439692465c4365a09963cd504c.bindPopup(popup_2c1d6e724b9ab9dc45c4449ac3e2681f)
+        ;
+
+        
+    
+    
+            var marker_3bd2e76dd25d822b5d3b5762b5a4d011 = L.marker(
+                [40.822022, -73.911953],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_0ff6417b5cd75cf4f48d34612038d5ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3bd2e76dd25d822b5d3b5762b5a4d011.setIcon(icon_0ff6417b5cd75cf4f48d34612038d5ce);
+        
+    
+        var popup_20e6c185223bfb4dd55e4c171122cd4f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce0a4c337057801cc2f7b08a189f7baa = $(`<div id="html_ce0a4c337057801cc2f7b08a189f7baa" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-146044<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 3125 3 AVENUE</div>`)[0];
+            popup_20e6c185223bfb4dd55e4c171122cd4f.setContent(html_ce0a4c337057801cc2f7b08a189f7baa);
+        
+
+        marker_3bd2e76dd25d822b5d3b5762b5a4d011.bindPopup(popup_20e6c185223bfb4dd55e4c171122cd4f)
+        ;
+
+        
+    
+    
+            var marker_2cb088bbb49a578721422c3ada57ec58 = L.marker(
+                [40.820115, -73.89109],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_36dd4f590419e5a6e1244860024e3def = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2cb088bbb49a578721422c3ada57ec58.setIcon(icon_36dd4f590419e5a6e1244860024e3def);
+        
+    
+        var popup_24c3ed44c4f16c5b89cd8005f3528719 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0bec0e5bb7e8cbb6e2d684177f9ae8c4 = $(`<div id="html_0bec0e5bb7e8cbb6e2d684177f9ae8c4" style="width: 100.0%; height: 100.0%;"><strong>District 2: Morrisania, Longwood, Hunts Point</strong><br><strong>Site ID:</strong> bx-02-145558<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 985 BRUCKNER BOULEVARD</div>`)[0];
+            popup_24c3ed44c4f16c5b89cd8005f3528719.setContent(html_0bec0e5bb7e8cbb6e2d684177f9ae8c4);
+        
+
+        marker_2cb088bbb49a578721422c3ada57ec58.bindPopup(popup_24c3ed44c4f16c5b89cd8005f3528719)
+        ;
+
+        
+    
+    
+            var marker_4ea6a4164b109d653d24b7b3d385c235 = L.marker(
+                [40.816692, -73.916719],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_56363fc70ea16f19e33140d272ef697c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4ea6a4164b109d653d24b7b3d385c235.setIcon(icon_56363fc70ea16f19e33140d272ef697c);
+        
+    
+        var popup_209cd4950ccbfbeead132d3e0d7b773a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82fcd830b10e1f2a62b945c2a85800ab = $(`<div id="html_82fcd830b10e1f2a62b945c2a85800ab" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-123208<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 2883 3 AVENUE</div>`)[0];
+            popup_209cd4950ccbfbeead132d3e0d7b773a.setContent(html_82fcd830b10e1f2a62b945c2a85800ab);
+        
+
+        marker_4ea6a4164b109d653d24b7b3d385c235.bindPopup(popup_209cd4950ccbfbeead132d3e0d7b773a)
+        ;
+
+        
+    
+    
+            var marker_9de421b88daab75a585532f6050cdecc = L.marker(
+                [40.80891, -73.922209],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_1e33a8f9134c7b3a0c2b67d81583a0ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9de421b88daab75a585532f6050cdecc.setIcon(icon_1e33a8f9134c7b3a0c2b67d81583a0ef);
+        
+    
+        var popup_d763caacefbe2ffb09f530961c79ddbd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a8d98d6a10c937df2795519b41be011 = $(`<div id="html_7a8d98d6a10c937df2795519b41be011" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-102011<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 417 EAST 138 STREET</div>`)[0];
+            popup_d763caacefbe2ffb09f530961c79ddbd.setContent(html_7a8d98d6a10c937df2795519b41be011);
+        
+
+        marker_9de421b88daab75a585532f6050cdecc.bindPopup(popup_d763caacefbe2ffb09f530961c79ddbd)
+        ;
+
+        
+    
+    
+            var marker_f0a9a17d6d04360f63758c5612689189 = L.marker(
+                [40.816679, -73.916483],
+                {}
+            ).addTo(feature_group_a679a4ddf4a719528e49eba7b3f0a0e1);
+        
+    
+            var icon_cc613f5434bebb80fec3e0b5b0fae6b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f0a9a17d6d04360f63758c5612689189.setIcon(icon_cc613f5434bebb80fec3e0b5b0fae6b2);
+        
+    
+        var popup_16d4e17d1454b728f40f0a96fd5090dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85c5dc262d8473e4aa339f2ae33e2467 = $(`<div id="html_85c5dc262d8473e4aa339f2ae33e2467" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Site ID:</strong> bx-01-118956<br><strong>Type:</strong> Link1.0<br><strong>Status:</strong> Live<br><strong>Address:</strong> 2882 3 AVENUE</div>`)[0];
+            popup_16d4e17d1454b728f40f0a96fd5090dc.setContent(html_85c5dc262d8473e4aa339f2ae33e2467);
+        
+
+        marker_f0a9a17d6d04360f63758c5612689189.bindPopup(popup_16d4e17d1454b728f40f0a96fd5090dc)
+        ;
+
+        
+    
+    
+            var feature_group_2d32531be88611b1030fa861e34995fe = L.featureGroup(
+                {}
+            ).addTo(map_aa84c421ebe9e197475f6c87293087c7);
+        
+    
+            var marker_f70ebec47fee09bb9e6d7cbf15627156 = L.marker(
+                [40.812626, -73.922904],
+                {}
+            ).addTo(feature_group_2d32531be88611b1030fa861e34995fe);
+        
+    
+            var icon_f65d8e66522910488715196d0bb43c14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f70ebec47fee09bb9e6d7cbf15627156.setIcon(icon_f65d8e66522910488715196d0bb43c14);
+        
+    
+        var popup_c9b8bab60ce6dd320757f0921406de0a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_628a1e3da9b3ff52deaa2b0df5f4e516 = $(`<div id="html_628a1e3da9b3ff52deaa2b0df5f4e516" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Mott Haven Library</strong><br>321 E 140th St<br>CB1</div>`)[0];
+            popup_c9b8bab60ce6dd320757f0921406de0a.setContent(html_628a1e3da9b3ff52deaa2b0df5f4e516);
+        
+
+        marker_f70ebec47fee09bb9e6d7cbf15627156.bindPopup(popup_c9b8bab60ce6dd320757f0921406de0a)
+        ;
+
+        
+    
+    
+            var marker_88573e509e6bfcc8a51b975ff0e92322 = L.marker(
+                [40.825122, -73.915005],
+                {}
+            ).addTo(feature_group_2d32531be88611b1030fa861e34995fe);
+        
+    
+            var icon_1d0bdf21ececaa90e1d7d1a15ae05383 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_88573e509e6bfcc8a51b975ff0e92322.setIcon(icon_1d0bdf21ececaa90e1d7d1a15ae05383);
+        
+    
+        var popup_6a13cfec3b228d9a10a9106a35cc75e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9755669c92aead56937e8d37aa95fd8b = $(`<div id="html_9755669c92aead56937e8d37aa95fd8b" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Melrose Library</strong><br>910 Morris Ave<br>CB1</div>`)[0];
+            popup_6a13cfec3b228d9a10a9106a35cc75e0.setContent(html_9755669c92aead56937e8d37aa95fd8b);
+        
+
+        marker_88573e509e6bfcc8a51b975ff0e92322.bindPopup(popup_6a13cfec3b228d9a10a9106a35cc75e0)
+        ;
+
+        
+    
+    
+            var marker_fda598f98c82c95dfec968a5798d87f6 = L.marker(
+                [40.831452, -73.901743],
+                {}
+            ).addTo(feature_group_2d32531be88611b1030fa861e34995fe);
+        
+    
+            var icon_0b5f69556c7ddae34d389021091f3262 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_fda598f98c82c95dfec968a5798d87f6.setIcon(icon_0b5f69556c7ddae34d389021091f3262);
+        
+    
+        var popup_4be3a18a6853fad7a9dfd059baeca645 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f311a6e2d9ab4e741904d3e2901b07c6 = $(`<div id="html_f311a6e2d9ab4e741904d3e2901b07c6" style="width: 100.0%; height: 100.0%;"><strong>District 2: Morrisania, Longwood, Hunts Point</strong><br><strong>Morrisania Library</strong><br>610 E 169th St<br>CB2</div>`)[0];
+            popup_4be3a18a6853fad7a9dfd059baeca645.setContent(html_f311a6e2d9ab4e741904d3e2901b07c6);
+        
+
+        marker_fda598f98c82c95dfec968a5798d87f6.bindPopup(popup_4be3a18a6853fad7a9dfd059baeca645)
+        ;
+
+        
+    
+    
+            var marker_53af27427c8d1bc71a0abfe4c03985a3 = L.marker(
+                [40.906712, -73.901503],
+                {}
+            ).addTo(feature_group_2d32531be88611b1030fa861e34995fe);
+        
+    
+            var icon_c3a77071be9319193157af5a34749a48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_53af27427c8d1bc71a0abfe4c03985a3.setIcon(icon_c3a77071be9319193157af5a34749a48);
+        
+    
+        var popup_f2c5b129bfeba95d115886c5fa4bcde1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_056d9ad84a20e3ff8b8b6272c75c4c7a = $(`<div id="html_056d9ad84a20e3ff8b8b6272c75c4c7a" style="width: 100.0%; height: 100.0%;"><strong>District 8: Riverdale, Kingsbridge, Marble Hill</strong><br><strong>Riverdale Library</strong><br>5540 Mosholu Ave<br>CB8</div>`)[0];
+            popup_f2c5b129bfeba95d115886c5fa4bcde1.setContent(html_056d9ad84a20e3ff8b8b6272c75c4c7a);
+        
+
+        marker_53af27427c8d1bc71a0abfe4c03985a3.bindPopup(popup_f2c5b129bfeba95d115886c5fa4bcde1)
+        ;
+
+        
+    
+    
+            var marker_13a7ef29cfaf96cbc3d03b3759099265 = L.marker(
+                [40.880325, -73.904948],
+                {}
+            ).addTo(feature_group_2d32531be88611b1030fa861e34995fe);
+        
+    
+            var icon_c12cca21077371f285ee3bfd9b3677fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_13a7ef29cfaf96cbc3d03b3759099265.setIcon(icon_c12cca21077371f285ee3bfd9b3677fb);
+        
+    
+        var popup_08717a6276a9fb23ecf29149452fc471 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f56d462b5937355f124a47650418cf8 = $(`<div id="html_1f56d462b5937355f124a47650418cf8" style="width: 100.0%; height: 100.0%;"><strong>District 8: Riverdale, Kingsbridge, Marble Hill</strong><br><strong>Kingsbridge Library</strong><br>291 W 231st St<br>CB8</div>`)[0];
+            popup_08717a6276a9fb23ecf29149452fc471.setContent(html_1f56d462b5937355f124a47650418cf8);
+        
+
+        marker_13a7ef29cfaf96cbc3d03b3759099265.bindPopup(popup_08717a6276a9fb23ecf29149452fc471)
+        ;
+
+        
+    
+    
+            var marker_316298b5aad6d8e2288df91dbc567d45 = L.marker(
+                [40.826314, -73.828972],
+                {}
+            ).addTo(feature_group_2d32531be88611b1030fa861e34995fe);
+        
+    
+            var icon_b8593a8f0a95405ff2b683d95e3cc630 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_316298b5aad6d8e2288df91dbc567d45.setIcon(icon_b8593a8f0a95405ff2b683d95e3cc630);
+        
+    
+        var popup_de58de9a206f38d9bb4762eb00abfd4d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e990969e8dc93095a76237f0e90ce1e = $(`<div id="html_5e990969e8dc93095a76237f0e90ce1e" style="width: 100.0%; height: 100.0%;"><strong>District 10: Throgs Neck, Country Club, Co-op City, Pelham Bay</strong><br><strong>Throgs Neck Library</strong><br>3025 Cross Bronx Expressway<br>CB10</div>`)[0];
+            popup_de58de9a206f38d9bb4762eb00abfd4d.setContent(html_5e990969e8dc93095a76237f0e90ce1e);
+        
+
+        marker_316298b5aad6d8e2288df91dbc567d45.bindPopup(popup_de58de9a206f38d9bb4762eb00abfd4d)
+        ;
+
+        
+    
+    
+            var marker_33782b2c9eebbf23c670e87197ad0f76 = L.marker(
+                [40.84695, -73.831745],
+                {}
+            ).addTo(feature_group_2d32531be88611b1030fa861e34995fe);
+        
+    
+            var icon_3a1cb308d7ded75e051cfd4f33321736 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_33782b2c9eebbf23c670e87197ad0f76.setIcon(icon_3a1cb308d7ded75e051cfd4f33321736);
+        
+    
+        var popup_b67249965125bd5cb22c57c2eb43163a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23c6a06260a50ebdb3ce16015403a63e = $(`<div id="html_23c6a06260a50ebdb3ce16015403a63e" style="width: 100.0%; height: 100.0%;"><strong>District 10: Throgs Neck, Country Club, Co-op City, Pelham Bay</strong><br><strong>Pelham Bay Library</strong><br>3060 Middletown Rd<br>CB10</div>`)[0];
+            popup_b67249965125bd5cb22c57c2eb43163a.setContent(html_23c6a06260a50ebdb3ce16015403a63e);
+        
+
+        marker_33782b2c9eebbf23c670e87197ad0f76.bindPopup(popup_b67249965125bd5cb22c57c2eb43163a)
+        ;
+
+        
+    
+    
+            var feature_group_a15d10b7c313c3d2d343090383d3331c = L.featureGroup(
+                {}
+            ).addTo(map_aa84c421ebe9e197475f6c87293087c7);
+        
+    
+            var marker_5fd91461ee25a2b3a585000577ff409c = L.marker(
+                [40.82207, -73.886499],
+                {}
+            ).addTo(feature_group_a15d10b7c313c3d2d343090383d3331c);
+        
+    
+            var icon_531dca75e77524f6dc33d7ba3845b714 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "briefcase", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_5fd91461ee25a2b3a585000577ff409c.setIcon(icon_531dca75e77524f6dc33d7ba3845b714);
+        
+    
+        var popup_4f9b01cf37076aa6f552300986c4d98a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5bc203ab658324b8287af9a984734b8c = $(`<div id="html_5bc203ab658324b8287af9a984734b8c" style="width: 100.0%; height: 100.0%;"><strong>District 2: Morrisania, Longwood, Hunts Point</strong><br><strong>Hunts Point Workforce1 Career Center</strong><br>1029 E 163rd St<br>CB2</div>`)[0];
+            popup_4f9b01cf37076aa6f552300986c4d98a.setContent(html_5bc203ab658324b8287af9a984734b8c);
+        
+
+        marker_5fd91461ee25a2b3a585000577ff409c.bindPopup(popup_4f9b01cf37076aa6f552300986c4d98a)
+        ;
+
+        
+    
+    
+            var feature_group_56501c8342990fbd0a6f042224cd3a24 = L.featureGroup(
+                {}
+            ).addTo(map_aa84c421ebe9e197475f6c87293087c7);
+        
+    
+            var marker_2adc33d48390c816a845732c924098fb = L.marker(
+                [40.8104, -73.9213],
+                {}
+            ).addTo(feature_group_56501c8342990fbd0a6f042224cd3a24);
+        
+    
+            var icon_c67a2b5cc6ee4035a9a6f05137bd92e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "users", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_2adc33d48390c816a845732c924098fb.setIcon(icon_c67a2b5cc6ee4035a9a6f05137bd92e9);
+        
+    
+        var popup_d71be9a768369234230ce6a4380c25ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6fb88d39eb103624159820a67d49dab7 = $(`<div id="html_6fb88d39eb103624159820a67d49dab7" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Patterson Community Center</strong><br>340 Morris Avenue<br>CB1</div>`)[0];
+            popup_d71be9a768369234230ce6a4380c25ca.setContent(html_6fb88d39eb103624159820a67d49dab7);
+        
+
+        marker_2adc33d48390c816a845732c924098fb.bindPopup(popup_d71be9a768369234230ce6a4380c25ca)
+        ;
+
+        
+    
+    
+            var marker_b031615d34496e78996ecd47e43c3d9a = L.marker(
+                [40.81799, -73.92751],
+                {}
+            ).addTo(feature_group_56501c8342990fbd0a6f042224cd3a24);
+        
+    
+            var icon_a3fec248d34dab8a2d0850b85a8bf710 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "users", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_b031615d34496e78996ecd47e43c3d9a.setIcon(icon_a3fec248d34dab8a2d0850b85a8bf710);
+        
+    
+        var popup_0fe284a5f2bb56a6442d32c977df9aad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75e2fe2ed579f6978d43b8f505092070 = $(`<div id="html_75e2fe2ed579f6978d43b8f505092070" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Hostos Community College</strong><br>500 Grand Concourse<br>CB1</div>`)[0];
+            popup_0fe284a5f2bb56a6442d32c977df9aad.setContent(html_75e2fe2ed579f6978d43b8f505092070);
+        
+
+        marker_b031615d34496e78996ecd47e43c3d9a.bindPopup(popup_0fe284a5f2bb56a6442d32c977df9aad)
+        ;
+
+        
+    
+    
+            var marker_38e40f871fca40bf3c6178401ca60a65 = L.marker(
+                [40.80718, -73.9176],
+                {}
+            ).addTo(feature_group_56501c8342990fbd0a6f042224cd3a24);
+        
+    
+            var icon_24cd3cf185694243721f7dfee25dd9f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "users", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_38e40f871fca40bf3c6178401ca60a65.setIcon(icon_24cd3cf185694243721f7dfee25dd9f6);
+        
+    
+        var popup_ed08bef2f2df28ea7e3b1db3e733ffe7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cee261e250ae37488721387283cdcf44 = $(`<div id="html_cee261e250ae37488721387283cdcf44" style="width: 100.0%; height: 100.0%;"><strong>District 1: Mott Haven, Melrose, Port Morris</strong><br><strong>Mill Brook Community Center</strong><br>201 St. Ann’s Avenue<br>CB2</div>`)[0];
+            popup_ed08bef2f2df28ea7e3b1db3e733ffe7.setContent(html_cee261e250ae37488721387283cdcf44);
+        
+
+        marker_38e40f871fca40bf3c6178401ca60a65.bindPopup(popup_ed08bef2f2df28ea7e3b1db3e733ffe7)
+        ;
+
+        
+    
+    
+            var marker_9428396ce80d00a8c54299e9c47c0116 = L.marker(
+                [40.90545, -73.90225],
+                {}
+            ).addTo(feature_group_56501c8342990fbd0a6f042224cd3a24);
+        
+    
+            var icon_aabc747ae2186ba08e244102cafdb547 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "users", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_9428396ce80d00a8c54299e9c47c0116.setIcon(icon_aabc747ae2186ba08e244102cafdb547);
+        
+    
+        var popup_121c9c62e82dd39fb4271172ae6b0202 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6b0d736f2b4f636fb32f7713dc3fb00 = $(`<div id="html_d6b0d736f2b4f636fb32f7713dc3fb00" style="width: 100.0%; height: 100.0%;"><strong>District 8: Riverdale, Kingsbridge, Marble Hill</strong><br><strong>Riverdale Neighborhood House</strong><br>5521 Mosholu Avenue<br>CB8</div>`)[0];
+            popup_121c9c62e82dd39fb4271172ae6b0202.setContent(html_d6b0d736f2b4f636fb32f7713dc3fb00);
+        
+
+        marker_9428396ce80d00a8c54299e9c47c0116.bindPopup(popup_121c9c62e82dd39fb4271172ae6b0202)
+        ;
+
+        
+    
+    
+            var marker_318ee0d122eb0e6510edc5972046ef7f = L.marker(
+                [40.87293, -73.82306],
+                {}
+            ).addTo(feature_group_56501c8342990fbd0a6f042224cd3a24);
+        
+    
+            var icon_3f679116e3b720d4f19f11fb2b15ddc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "users", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_318ee0d122eb0e6510edc5972046ef7f.setIcon(icon_3f679116e3b720d4f19f11fb2b15ddc1);
+        
+    
+        var popup_c162330e1a3edfc31428ab5c21b72382 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea56ca95ceb76a6104957b6ec6c06066 = $(`<div id="html_ea56ca95ceb76a6104957b6ec6c06066" style="width: 100.0%; height: 100.0%;"><strong>District 10: Throgs Neck, Country Club, Co-op City, Pelham Bay</strong><br><strong>JASA Co-op City</strong><br>135 Einstein Loop N<br>CB10</div>`)[0];
+            popup_c162330e1a3edfc31428ab5c21b72382.setContent(html_ea56ca95ceb76a6104957b6ec6c06066);
+        
+
+        marker_318ee0d122eb0e6510edc5972046ef7f.bindPopup(popup_c162330e1a3edfc31428ab5c21b72382)
+        ;
+
+        
+    
+    
+            var layer_control_9f48c9ba2eff78e2c6b1af1a92abf2dc = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_59d18b2a3214120c92a601d5aef80d8d,
+                },
+                overlays :  {
+                    "Wi-Fi Kiosks" : feature_group_a679a4ddf4a719528e49eba7b3f0a0e1,
+                    "Libraries" : feature_group_2d32531be88611b1030fa861e34995fe,
+                    "Workforce1 Centers" : feature_group_a15d10b7c313c3d2d343090383d3331c,
+                    "Community Centers" : feature_group_56501c8342990fbd0a6f042224cd3a24,
+                },
+            };
+            L.control.layers(
+                layer_control_9f48c9ba2eff78e2c6b1af1a92abf2dc.base_layers,
+                layer_control_9f48c9ba2eff78e2c6b1af1a92abf2dc.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_aa84c421ebe9e197475f6c87293087c7);
+        
+</script>
+</html>
